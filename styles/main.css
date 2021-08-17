@@ -103,3 +103,15 @@ details p {
 .accordion-text {
   display: flex;
 }
+
+.tools-icons-positioning {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.tools-icons-size {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}

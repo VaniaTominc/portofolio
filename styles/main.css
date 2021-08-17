@@ -115,3 +115,7 @@ details p {
   height: 25px;
   margin-right: 10px;
 }
+
+.accordion-text-paragraph {
+  font-size: 1.2rem;
+}

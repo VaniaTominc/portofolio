@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ! Projects section */
+.projects {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.projects-main-heading {
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .77;
+  font-family: "didot";
+}
+
+.changing-according-profile {
+  padding-top: 20px;
+}
+
+details[open] summary ~* {
+  animation: open .3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    overflow: 1;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: .5rem 0;
+  border-bottom: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary::after {
+  content: '+';
+  color: #d39700;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  right: 0;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+}
+
+details p {
+  font-size: .95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+.project-details-width {
+  width: 90%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.project-images-resize {
+  width: 500px;
+  padding: 1rem;
+}
+
+.summary-positioning {
+  display: flex;
+  align-items: center;
+}
+
+.project-icon {
+  padding-right: 1rem;
+}
+
+.accordion-text {
+  display: flex;
+}

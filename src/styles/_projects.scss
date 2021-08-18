@@ -6,11 +6,6 @@
   transition: 1s;
 }
 
-.projects:hover {
-  margin-left: 2.9rem;
-  transition: 1s;
-}
-
 .projects-main-heading {
   font-size: 8rem;
   letter-spacing: .3rem;
@@ -23,6 +18,11 @@
   transition: .4s;
   opacity: .4;
   animation: open 4s ease-in-out;
+}
+
+.projects:hover {
+  margin-left: 2.9rem;
+  transition: 1s;
 }
 
 .changing-according-profile {

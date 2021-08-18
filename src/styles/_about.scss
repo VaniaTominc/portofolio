@@ -2,11 +2,13 @@
 .about {
   min-height: 100vh;
   display: flex;
+  transition: 1s;
 }
 
 .about:hover {
   margin-left: 2.9rem;
   transition: 1s;
+  cursor: pointer;
 }
 
 .about-branding-picture {
@@ -81,6 +83,7 @@
 
 .container:hover .overlay {
   opacity: 1;
+  cursor: pointer;
 }
 
 .text {

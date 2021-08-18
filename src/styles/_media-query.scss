@@ -1,9 +1,17 @@
 // ! max-width: 1024px
 @media only screen and (max-width: 1024px) {
 
-  // body {
-  //   width: 1024px;
-  // }
+  .disabled {
+    pointer-events: none;
+    margin-left: 2.9rem;
+    h1 {
+      opacity: .2;
+    }
+  }
+
+  .projects-media-query-hover {
+    margin-left: 2.9rem;
+  }
 
   // Landing page
 
@@ -144,8 +152,23 @@
   // About page
 
   .about {
-    width: 134%;
+    width: 135%;
+    // flex-direction: column;
   }
+
+  .about:hover {
+    margin-left: 1.9rem;
+  }
+
+  .about-container-media-query {
+    margin-left: 1.2rem;
+  }
+
+  // .projects-main-heading {
+  //   transform: rotate(360deg);
+  //   writing-mode: horizontal-tb;
+  //   letter-spacing: .1rem;
+  // }
 
   .positioning-about-main-heading {
     margin-top: 10rem;
@@ -161,16 +184,54 @@
     margin-right: 3rem;
   }
 
+  .skills-icons {
+    width: 70%;
+  }
+
+  .overlay {
+    height: 20%;
+    margin-left: -.1rem;
+  }
+
   // Experience page
 
   .experiences-main-heading {
-    font-size: 6.5rem;
+    font-size: 5rem;
   }
 
   // Projects page
 
+  .projects {
+    width: 133%;
+  }
+
   .projects-main-heading {
-    font-size: 6.5rem;
+    font-size: 5rem;
+    line-height: 0;
+    margin-left: 2.9rem;
+    transition: 1s;
+  }
+
+  // .projects:hover {
+  //   margin-left: 1.9rem;
+  //   transition: 1s;
+  // }
+
+  .project-images-resize {
+    width: 483px;
+  }
+
+  .project-details-width {
+    margin-left: 5rem;
+  }
+
+  .summary-positioning {
+    .project-icon {
+      width: 60px;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 
   // Contact page

@@ -1,0 +1,125 @@
+/* ! Projects section */
+.projects {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.projects:hover {
+  margin-left: 2.9rem;
+  transition: 1s;
+}
+
+.projects-main-heading {
+  font-size: 8rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .2;
+  font-family: "didot";
+  transition: .4s;
+  opacity: .4;
+  animation: open 4s ease-in-out;
+}
+
+.changing-according-profile {
+  padding-top: 20px;
+}
+
+details[open] summary ~* {
+  animation: open 1s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    overflow: 1;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: .5rem 0;
+  border-bottom: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+  animation: open 2s ease-in-out;
+}
+
+details summary::after {
+  content: '+';
+  color: #d39700;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  right: 0;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+}
+
+details p {
+  font-size: .95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+.project-details-width {
+  width: 75%;
+  margin-left: 8rem;
+  margin-right: 4rem;
+}
+
+.project-images-resize {
+  width: 500px;
+  padding: 1rem;
+}
+
+.summary-positioning {
+  display: flex;
+  align-items: center;
+}
+
+.project-icon {
+  padding-right: 1rem;
+}
+
+.accordion-text {
+  display: flex;
+}
+
+.tools-icons-positioning {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.tools-icons-size {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.accordion-text-paragraph {
+  font-size: 1.2rem;
+}

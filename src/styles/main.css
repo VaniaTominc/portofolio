@@ -1,27 +1,24 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.home {
-  min-height: 100vh;
-}
-
 /* ! About */
 .about {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .about:hover {
   margin-left: 2.9rem;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .about-branding-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 80%;
   margin: 0 auto;
 }
@@ -29,25 +26,35 @@
 .my-photo-positioning {
   margin-top: 6rem;
   margin-left: 6rem;
-  animation: open 8s ease-in-out;
+  -webkit-animation: open 8s ease-in-out;
+          animation: open 8s ease-in-out;
 }
 
 .positioning-brand-statement-paragraph {
   margin-left: -4rem;
   margin-top: 5rem;
-  animation: open 5s ease-in-out;
+  -webkit-animation: open 5s ease-in-out;
+          animation: open 5s ease-in-out;
   z-index: 1;
 }
 
 .positioning-about-main-heading {
   margin-top: 3rem;
-  animation: open 2s ease-in-out;
+  -webkit-animation: open 2s ease-in-out;
+          animation: open 2s ease-in-out;
 }
 
 .projects-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills-positioning-container {
@@ -58,15 +65,19 @@
 .skills-icons {
   width: 100%;
   margin: 1rem;
+  -webkit-transition: 2s;
   transition: 2s;
   display: block;
 }
 
 .skills-icons-positioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  animation: open 2s ease-in-out;
+  -webkit-animation: open 2s ease-in-out;
+          animation: open 2s ease-in-out;
 }
 
 .overlay {
@@ -80,6 +91,7 @@
   height: 50%;
   width: 120%;
   opacity: 0;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
@@ -101,7 +113,6 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -117,6 +128,7 @@
   text-transform: uppercase;
   text-align: center;
   font-family: "didot";
+  -webkit-transition: .4s;
   transition: .4s;
   opacity: .4;
 }
@@ -130,6 +142,8 @@
 }
 
 .experiences-education-wannabe-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 80%;
   height: 400px;
@@ -154,13 +168,19 @@
 /* ! Projects section */
 .projects {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .projects:hover {
   margin-left: 2.9rem;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -168,28 +188,43 @@
   font-size: 8rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
-  transform: rotate(180deg);
-  writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
   text-align: center;
   line-height: .2;
   font-family: "didot";
+  -webkit-transition: .4s;
   transition: .4s;
   opacity: .4;
-  animation: open 4s ease-in-out;
+  -webkit-animation: open 4s ease-in-out;
+          animation: open 4s ease-in-out;
 }
 
 .changing-according-profile {
   padding-top: 20px;
 }
 
-details[open] summary ~* {
-  animation: open 1s ease-in-out;
+details[open] summary ~ * {
+  -webkit-animation: open 1s ease-in-out;
+          animation: open 1s ease-in-out;
+}
+
+@-webkit-keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    overflow: 1;
+  }
 }
 
 @keyframes open {
   0% {
     opacity: 0;
-  } 
+  }
   100% {
     overflow: 1;
   }
@@ -208,7 +243,8 @@ details summary {
   font-size: 1.25rem;
   font-weight: 300;
   list-style: none;
-  animation: open 2s ease-in-out;
+  -webkit-animation: open 2s ease-in-out;
+          animation: open 2s ease-in-out;
 }
 
 details summary::after {
@@ -218,12 +254,15 @@ details summary::after {
   font-size: 1.75rem;
   line-height: 0;
   right: 0;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 200ms linear;
   transition: 200ms linear;
 }
 
 details[open] summary::after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   font-size: 2rem;
 }
 
@@ -249,8 +288,12 @@ details p {
 }
 
 .summary-positioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project-icon {
@@ -258,12 +301,18 @@ details p {
 }
 
 .accordion-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .tools-icons-positioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 1rem;
 }
 
@@ -280,7 +329,8 @@ details p {
 /* ! Contacts */
 .contacts {
   min-height: 75vh;
-  animation: open 4s ease-in-out;
+  -webkit-animation: open 4s ease-in-out;
+          animation: open 4s ease-in-out;
 }
 
 /* ! Footer */
@@ -290,7 +340,21 @@ details p {
   height: 4rem;
   margin-top: -4rem;
   background: red;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

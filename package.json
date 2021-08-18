@@ -1,0 +1,8 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:VaniaTominc/portofolio.git",
+  "author": "vtominc <vanja.tominc@gmail.com>",
+  "license": "MIT"
+}

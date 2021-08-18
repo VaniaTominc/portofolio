@@ -1,0 +1,198 @@
+// ! max-width: 1024px
+@media only screen and (max-width: 1024px) {
+
+  // body {
+  //   width: 1024px;
+  // }
+
+  // Landing page
+
+  .my-introduction-heading {
+  
+    margin-top: 16rem;
+    h1 {
+      font-size: 12rem;
+    }
+    h2 {
+      font-size: 6rem;
+      margin-top: -1rem;
+    }
+  }
+
+  // About page
+
+  .positioning-about-main-heading {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .my-photo-positioning {
+    margin-top: 7rem;
+    margin-left: 10rem;
+  }
+
+  .positioning-brand-statement-paragraph {
+    margin-left: -18.5rem;
+  }
+
+  .skills-icons-positioning {
+    flex-wrap: wrap
+  }
+
+  // Experience page
+
+
+  // Projects page
+
+  .project-images-resize {
+    width: 400px;
+    // height: 60%;
+  }
+
+  .project-details-width {
+    margin-bottom: 10rem;
+  }
+
+  // Contact page
+
+}
+
+// ! max-width: 800px
+@media only screen and (max-width: 800px) {
+
+  // Landing page
+
+  .homepage-container {
+    width: 122%;
+  }
+
+  .my-introduction-heading {
+    margin-top: 16rem;
+    h1 {
+      font-size: 8rem;
+    }
+    h2 {
+      font-size: 4rem;
+      margin-top: -1rem;
+    }
+  }
+
+  header {
+    min-height: 115vh;
+  }
+
+  // About page
+
+  .about {
+    width: 122%;
+  }
+
+  .skills-icons {
+    width: 80%;
+  }
+
+  .overlay {
+    height: 20%;
+    margin-left: .1rem;
+  }
+
+  // Experience page
+
+
+  // Projects page
+
+  .projects {
+    width: 115%;
+  }
+
+  .accordion-text {
+    flex-direction: column;
+  }
+
+  .project-images-resize {
+    width: 600px;
+  }
+
+  .project-image-media-query {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tools-icons-positioning {
+    justify-content: center;
+  }
+
+  .tools-icons-size {
+    width: 30px;
+    height: 30px;
+  }
+
+  // Contact page
+
+}
+
+
+// ! max-width: 600px
+@media only screen and (max-width: 600px) {
+
+  // Landing page
+
+  .homepage-container {
+    width: 134%;
+  }
+
+  // About page
+
+  .about {
+    width: 134%;
+  }
+
+  .positioning-about-main-heading {
+    margin-top: 10rem;
+    width: 300px;
+  }
+
+  .my-photo-positioning {
+    margin-right: -10rem;
+    margin-left: 1.5rem;
+  }
+
+  .positioning-brand-statement-paragraph {
+    margin-right: 3rem;
+  }
+
+  // Experience page
+
+  .experiences-main-heading {
+    font-size: 6.5rem;
+  }
+
+  // Projects page
+
+  .projects-main-heading {
+    font-size: 6.5rem;
+  }
+
+  // Contact page
+
+}
+
+
+// ! max-width: 420px
+@media only screen and (max-width: 420px) {
+
+  // Landing page
+
+
+  // About page
+
+
+  // Experience page
+
+
+  // Projects page
+
+
+  // Contact page
+
+}

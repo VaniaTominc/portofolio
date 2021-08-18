@@ -1,0 +1,94 @@
+* {
+  background: antiquewhite;
+}
+
+.homepage-container {
+  min-height: 100vh;
+  font-family: "didot";
+}
+
+header {
+  // border: 1px solid red;
+  margin: 2rem;
+  min-height: 93.2vh;
+  position: relative;
+}
+
+nav {
+  a {
+    font-size: 1.5rem;
+    opacity: .3;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.top-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.navbar-contacts-directions {
+  transform: rotate(360deg);
+  writing-mode: vertical-lr;
+}
+
+.my-introduction-heading {
+  // border: 1px solid blue;
+
+  margin-top: 18rem;
+  h1 {
+    text-transform: uppercase;
+    font-size: 12rem;
+    color: rgb(114, 0, 0);
+  }
+  h2 {
+    font-size: 6rem;
+    margin-top: -3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-home-1 {
+  height: 100vh;
+  padding: 10em;
+}
+
+.custom-p {
+  opacity: 0;
+  transition: opacity 6s;
+}
+
+.scroll-class {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+

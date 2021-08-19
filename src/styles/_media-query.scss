@@ -31,16 +31,21 @@
 
   .positioning-about-main-heading {
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 11rem;
+    width: 400px;
+    p {
+      margin-right: -3rem;
+    }
   }
 
   .my-photo-positioning {
-    margin-top: 7rem;
-    margin-left: 10rem;
+    margin-top: 11rem;
+    margin-left: 6rem;
   }
 
   .positioning-brand-statement-paragraph {
-    margin-left: -18.5rem;
+    margin-top: 4rem;
+    margin-left: -25rem;
   }
 
   .skills-icons-positioning {
@@ -49,13 +54,38 @@
 
   // Experience page
 
+  .experiences-left-side {
+    width: 100%;
+  }
+
+  .experiences-right-side {
+    display: none;
+  }
 
   // Projects page
 
+  .accordion-text {
+    flex-direction: column;
+  }
+
   .project-images-resize {
-    width: 400px;
+    width: 600px;
     // height: 60%;
   }
+
+  .project-image-media-query {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tools-icons-positioning {
+    justify-content: center;
+  }
+
+  // .tools-icons-size {
+  //   width: 30px;
+  //   height: 30px;
+  // }
 
   .project-details-width {
     margin-bottom: 10rem;
@@ -72,6 +102,9 @@
 
   .homepage-container {
     width: 122%;
+    h2 {
+      margin-right: -3rem;
+    }
   }
 
   .my-introduction-heading {
@@ -82,6 +115,7 @@
     h2 {
       font-size: 4rem;
       margin-top: -1rem;
+      margin-left: 1.5rem;
     }
   }
 
@@ -95,6 +129,10 @@
     width: 122%;
   }
 
+  .my-photo-positioning {
+    margin-left: 4.5rem;
+  }
+
   .skills-icons {
     width: 80%;
   }
@@ -106,33 +144,20 @@
 
   // Experience page
 
+  .experiences-main-heading {
+    margin-left: 1.5rem;
+  }
+
+  .contact-main-heading {
+    margin-left: 5rem;
+  }
+
+
 
   // Projects page
 
   .projects {
     width: 115%;
-  }
-
-  .accordion-text {
-    flex-direction: column;
-  }
-
-  .project-images-resize {
-    width: 600px;
-  }
-
-  .project-image-media-query {
-    display: flex;
-    justify-content: center;
-  }
-
-  .tools-icons-positioning {
-    justify-content: center;
-  }
-
-  .tools-icons-size {
-    width: 30px;
-    height: 30px;
   }
 
   // Contact page

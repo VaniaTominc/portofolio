@@ -477,7 +477,7 @@ details p {
   min-height: 100vh;
 }
 
-.experiences-main-heading {
+.experiences-main-heading, .contact-main-heading {
   font-size: 8rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
@@ -644,56 +644,29 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 11rem;
+    width: 400px;
+  }
+  .positioning-about-main-heading p {
+    margin-right: -3rem;
   }
   .my-photo-positioning {
-    margin-top: 7rem;
-    margin-left: 10rem;
+    margin-top: 11rem;
+    margin-left: 6rem;
   }
   .positioning-brand-statement-paragraph {
-    margin-left: -18.5rem;
+    margin-top: 4rem;
+    margin-left: -25rem;
   }
   .skills-icons-positioning {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .project-images-resize {
-    width: 400px;
+  .experiences-left-side {
+    width: 100%;
   }
-  .project-details-width {
-    margin-bottom: 10rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .homepage-container {
-    width: 122%;
-  }
-  .my-introduction-heading {
-    margin-top: 16rem;
-  }
-  .my-introduction-heading h1 {
-    font-size: 8rem;
-  }
-  .my-introduction-heading h2 {
-    font-size: 4rem;
-    margin-top: -1rem;
-  }
-  header {
-    min-height: 115vh;
-  }
-  .about {
-    width: 122%;
-  }
-  .skills-icons {
-    width: 80%;
-  }
-  .overlay {
-    height: 20%;
-    margin-left: .1rem;
-  }
-  .projects {
-    width: 115%;
+  .experiences-right-side {
+    display: none;
   }
   .accordion-text {
     -webkit-box-orient: vertical;
@@ -717,9 +690,53 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .tools-icons-size {
-    width: 30px;
-    height: 30px;
+  .project-details-width {
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .homepage-container {
+    width: 122%;
+  }
+  .homepage-container h2 {
+    margin-right: -3rem;
+  }
+  .my-introduction-heading {
+    margin-top: 16rem;
+  }
+  .my-introduction-heading h1 {
+    font-size: 8rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 4rem;
+    margin-top: -1rem;
+    margin-left: 1.5rem;
+  }
+  header {
+    min-height: 115vh;
+  }
+  .about {
+    width: 122%;
+  }
+  .my-photo-positioning {
+    margin-left: 4.5rem;
+  }
+  .skills-icons {
+    width: 80%;
+  }
+  .overlay {
+    height: 20%;
+    margin-left: .1rem;
+  }
+  .experiences-main-heading {
+    margin-left: 1.5rem;
+  }
+  .contact-main-heading {
+    margin-left: 5rem;
+  }
+  .projects {
+    width: 115%;
   }
 }
 

@@ -77,7 +77,6 @@ nav a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
-  display: inline-block;
 }
 
 nav:hover a h2 {
@@ -128,6 +127,12 @@ nav:hover a h2 {
 
 .my-introduction-heading {
   margin-top: 18rem;
+}
+
+.my-introduction-heading .tominc-media-query {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .my-introduction-heading h1 {
@@ -195,6 +200,7 @@ nav:hover a h2 {
   margin-top: -14.5rem;
   -webkit-animation: open 5s ease-in-out;
           animation: open 5s ease-in-out;
+  z-index: 1;
 }
 
 .positioning-about-main-heading {
@@ -630,14 +636,30 @@ body {
     margin-left: 2.9rem;
   }
   .my-introduction-heading {
-    margin-top: 16rem;
+    margin-top: 26rem;
+  }
+  .my-introduction-heading .tominc-media-query {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my-introduction-heading .space-unicode {
+    display: none;
+  }
+  .my-introduction-heading .tominc-positioning {
+    padding-top: -2rem;
+    margin-top: -3rem;
+    line-height: .8;
   }
   .my-introduction-heading h1 {
     font-size: 12rem;
   }
   .my-introduction-heading h2 {
     font-size: 6rem;
-    margin-top: -1rem;
+    margin-top: 3rem;
+    line-height: .8;
+    margin-left: 2rem;
   }
   .positioning-about-main-heading {
     -webkit-box-orient: vertical;
@@ -702,19 +724,8 @@ body {
   .homepage-container h2 {
     margin-right: -3rem;
   }
-  .my-introduction-heading {
-    margin-top: 16rem;
-  }
-  .my-introduction-heading h1 {
-    font-size: 8rem;
-  }
-  .my-introduction-heading h2 {
-    font-size: 4rem;
-    margin-top: -1rem;
-    margin-left: 1.5rem;
-  }
   header {
-    min-height: 115vh;
+    min-height: 127vh;
   }
   .about {
     width: 122%;
@@ -740,12 +751,74 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 540px) {
+  .my-introduction-heading {
+    margin-top: 15rem;
+  }
+  .my-introduction-heading .tominc-media-query {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my-introduction-heading .space-unicode {
+    display: none;
+  }
+  .my-introduction-heading .tominc-positioning {
+    padding-top: -2rem;
+    margin-top: -3rem;
+    line-height: 1;
+  }
+  .my-introduction-heading h1 {
+    font-size: 10rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 5rem;
+    margin-top: 3rem;
+    line-height: .8;
+    margin-left: 2rem;
+  }
+  .scrolls {
+    display: none;
+  }
   .homepage-container {
-    width: 134%;
+    width: 140%;
+    height: 150vh;
+  }
+  .putting-margin-to-home-page {
+    width: 105%;
+  }
+  .bottom-navbar {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottom-navbar .navbar-contacts-directions {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+  .top-navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  nav:hover a h2 {
+    pointer-events: none;
+    margin-right: -5rem;
+    color: black;
   }
   .about {
-    width: 135%;
+    width: 150%;
+  }
+  .about .projects-main-heading {
+    margin-left: -.8rem;
   }
   .about:hover {
     margin-left: 1.9rem;
@@ -755,46 +828,145 @@ body {
   }
   .positioning-about-main-heading {
     margin-top: 10rem;
-    width: 300px;
+    width: 500px;
+    margin-left: -2rem;
+    margin-right: 1.8rem;
+    font-size: 2.2rem;
+  }
+  .about-paragraph p {
+    font-size: 1.7rem;
+    line-height: 1.5;
   }
   .my-photo-positioning {
-    margin-right: -10rem;
-    margin-left: 1.5rem;
+    margin-left: -10rem;
+    margin-top: 24rem;
   }
   .positioning-brand-statement-paragraph {
-    margin-right: 3rem;
+    margin-left: -33rem;
+    margin-right: -2rem;
+    margin-top: 2rem;
+  }
+  .skills-positioning-container h3 {
+    font-size: 2.5rem;
+  }
+  .skills-positioning-container h4 {
+    font-size: 2rem;
+  }
+  .skills-icons-positioning {
+    margin-bottom: 3rem;
+    margin-left: -.5rem;
+    padding-bottom: 1rem;
+    width: 106%;
+  }
+  .skills-icons-positioning .container {
+    padding-bottom: 1rem;
   }
   .skills-icons {
-    width: 70%;
+    width: 80%;
   }
   .overlay {
+    opacity: 1;
     height: 20%;
-    margin-left: -.1rem;
+    margin-left: .1rem;
+    margin-top: 5rem;
+  }
+  .experiences {
+    margin-top: 14rem;
   }
   .experiences-main-heading {
-    font-size: 5rem;
+    margin-top: 10rem;
+    font-size: 6rem;
+    margin-left: 0;
+  }
+  .experiences-education-wannabe-table {
+    width: 130%;
+    margin-left: 3.4rem;
+    margin-top: 1rem;
+  }
+  .projects-main-container {
+    width: 95%;
+  }
+  .experiences-description {
+    margin-bottom: .5rem;
+  }
+  .experiences-description h3 {
+    font-size: 1.9rem;
+  }
+  .experiences-description h5 {
+    padding-top: .5rem;
+    font-size: 1.5rem;
+  }
+  .experiences-description li {
+    font-size: 1.7rem;
+    line-height: 1.5;
   }
   .projects {
-    width: 133%;
+    margin-top: 16rem;
+    width: 160%;
   }
   .projects-main-heading {
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 0;
-    margin-left: 2.9rem;
+    margin-left: -.8rem;
+    margin-bottom: 8rem;
     -webkit-transition: 1s;
     transition: 1s;
-  }
-  .project-images-resize {
-    width: 483px;
   }
   .project-details-width {
     margin-left: 5rem;
   }
   .summary-positioning .project-icon {
-    width: 60px;
+    width: 100px;
   }
   .summary-positioning h3 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    margin-left: 1rem;
+  }
+  .accordion-text-paragraph {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+  .tools-icons-size {
+    width: 60px;
+    height: 60px;
+    margin: .5rem;
+  }
+  .contacts {
+    margin-top: 10rem;
+  }
+  .contact-main-heading {
+    font-size: 6rem;
+    margin-left: 17rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .homepage-container {
+    height: 180vh;
+  }
+  nav {
+    margin-right: .7rem;
+  }
+  .top-navbar, .bottom-navbar {
+    margin-top: .5rem;
+  }
+  .top-navbar a h2, .bottom-navbar a h2 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .putting-margin-to-home-page {
+    width: 130%;
+  }
+  .my-introduction-heading {
+    margin-left: .5rem;
+    margin-top: 30rem;
+  }
+  .my-introduction-heading h1 {
+    font-size: 10.5rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 6rem;
+    margin-left: 1rem;
   }
 }
 

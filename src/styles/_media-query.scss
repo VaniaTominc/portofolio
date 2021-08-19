@@ -1,4 +1,4 @@
-// ! max-width: 1024px
+// ! max-width: 1024px - iPad Pro
 @media only screen and (max-width: 1024px) {
 
   .disabled {
@@ -13,21 +13,34 @@
     margin-left: 2.9rem;
   }
 
-  // Landing page
+  // ? Landing page
 
   .my-introduction-heading {
   
-    margin-top: 16rem;
+    margin-top: 26rem;
+    .tominc-media-query {
+      flex-direction: column;
+    }
+    .space-unicode {
+      display: none;
+    }
+    .tominc-positioning {
+      padding-top: -2rem;
+      margin-top: -3rem;
+      line-height: .8;
+    }
     h1 {
       font-size: 12rem;
     }
     h2 {
       font-size: 6rem;
-      margin-top: -1rem;
+      margin-top: 3rem;
+      line-height: .8;
+      margin-left: 2rem;
     }
   }
 
-  // About page
+  // ? About page
 
   .positioning-about-main-heading {
     flex-direction: column;
@@ -52,7 +65,7 @@
     flex-wrap: wrap
   }
 
-  // Experience page
+  // ? Experience page
 
   .experiences-left-side {
     width: 100%;
@@ -62,7 +75,7 @@
     display: none;
   }
 
-  // Projects page
+  // ? Projects page
 
   .accordion-text {
     flex-direction: column;
@@ -82,23 +95,18 @@
     justify-content: center;
   }
 
-  // .tools-icons-size {
-  //   width: 30px;
-  //   height: 30px;
-  // }
-
   .project-details-width {
     margin-bottom: 10rem;
   }
 
-  // Contact page
+  // ? Contact page
 
 }
 
-// ! max-width: 800px
+// ! max-width: 800px - iPad
 @media only screen and (max-width: 800px) {
 
-  // Landing page
+  // ? Landing page
 
   .homepage-container {
     width: 122%;
@@ -107,20 +115,8 @@
     }
   }
 
-  .my-introduction-heading {
-    margin-top: 16rem;
-    h1 {
-      font-size: 8rem;
-    }
-    h2 {
-      font-size: 4rem;
-      margin-top: -1rem;
-      margin-left: 1.5rem;
-    }
-  }
-
   header {
-    min-height: 115vh;
+    min-height: 127vh;
   }
 
   // About page
@@ -142,7 +138,7 @@
     margin-left: .1rem;
   }
 
-  // Experience page
+  // ? Experience page
 
   .experiences-main-heading {
     margin-left: 1.5rem;
@@ -154,31 +150,87 @@
 
 
 
-  // Projects page
+  // ? Projects page
 
   .projects {
     width: 115%;
   }
 
-  // Contact page
+  // ? Contact page
 
 }
 
 
-// ! max-width: 600px
-@media only screen and (max-width: 600px) {
+// ! max-width: 540px - Surface Duo
+@media only screen and (max-width: 540px) {
 
-  // Landing page
+  // ? Landing page
 
-  .homepage-container {
-    width: 134%;
+  .my-introduction-heading {
+  
+    margin-top: 15rem;
+    .tominc-media-query {
+      flex-direction: column;
+    }
+    .space-unicode {
+      display: none;
+    }
+    .tominc-positioning {
+      padding-top: -2rem;
+      margin-top: -3rem;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 10rem;
+    }
+    h2 {
+      font-size: 5rem;
+      margin-top: 3rem;
+      line-height: .8;
+      margin-left: 2rem;
+    }
   }
 
-  // About page
+  .scrolls {
+    display: none;
+  }
+
+  .homepage-container {
+    width: 140%;
+    height: 150vh;
+  }
+
+  .putting-margin-to-home-page {
+    width: 105%;
+  }
+
+  .bottom-navbar {
+    position: relative;
+    flex-direction: column;
+    .navbar-contacts-directions {
+      writing-mode: horizontal-tb;
+    }
+  }
+
+  .top-navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  nav:hover a h2 {
+    pointer-events: none;
+    margin-right: -5rem;
+    color: black;
+  }
+
+  // ? About page
 
   .about {
-    width: 135%;
+    width: 150%;
     // flex-direction: column;
+    .projects-main-heading {
+      margin-left: -.8rem;
+    }
   }
 
   .about:hover {
@@ -189,61 +241,110 @@
     margin-left: 1.2rem;
   }
 
-  // .projects-main-heading {
-  //   transform: rotate(360deg);
-  //   writing-mode: horizontal-tb;
-  //   letter-spacing: .1rem;
-  // }
-
   .positioning-about-main-heading {
     margin-top: 10rem;
-    width: 300px;
+    width: 500px;
+    margin-left: -2rem;
+    margin-right: 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  .about-paragraph p {
+    font-size: 1.7rem;
+    line-height: 1.5;
   }
 
   .my-photo-positioning {
-    margin-right: -10rem;
-    margin-left: 1.5rem;
+    margin-left: -10rem;
+    margin-top: 24rem;
   }
 
   .positioning-brand-statement-paragraph {
-    margin-right: 3rem;
+    margin-left: -33rem;
+    margin-right: -2rem;
+    margin-top: 2rem;
+  }
+
+  .skills-positioning-container {
+    h3 {
+      font-size: 2.5rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  .skills-icons-positioning {
+    margin-bottom: 3rem;
+    margin-left: -.5rem;
+    padding-bottom: 1rem;
+    width: 106%;
+    .container {
+      padding-bottom: 1rem;
+    }
   }
 
   .skills-icons {
-    width: 70%;
+    width: 80%;
   }
 
   .overlay {
+    opacity: 1;
     height: 20%;
-    margin-left: -.1rem;
+    margin-left: .1rem;
+    margin-top: 5rem;
   }
 
-  // Experience page
+  // ? Experience page
+
+  .experiences {
+    margin-top: 14rem;
+  }
 
   .experiences-main-heading {
-    font-size: 5rem;
+    margin-top: 10rem;
+    font-size: 6rem;
+    margin-left: 0;
   }
 
-  // Projects page
+  .experiences-education-wannabe-table {
+    width: 130%;
+    margin-left: 3.4rem;
+    margin-top: 1rem;
+  }
+
+  .projects-main-container {
+    width: 95%;
+  }
+
+  .experiences-description { 
+    margin-bottom: .5rem;
+    h3 {
+      font-size: 1.9rem;
+    }
+    h5 {
+      padding-top: .5rem;
+      font-size: 1.5rem;
+    }
+    li {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    }
+  }
+
+  // ? Projects page
 
   .projects {
-    width: 133%;
+    margin-top: 16rem;
+    width: 160%;
   }
 
   .projects-main-heading {
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 0;
-    margin-left: 2.9rem;
+    margin-left: -.8rem;
+    margin-bottom: 8rem;
     transition: 1s;
-  }
-
-  // .projects:hover {
-  //   margin-left: 1.9rem;
-  //   transition: 1s;
-  // }
-
-  .project-images-resize {
-    width: 483px;
   }
 
   .project-details-width {
@@ -252,33 +353,87 @@
 
   .summary-positioning {
     .project-icon {
-      width: 60px;
+      width: 100px;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 2.2rem;
+      margin-left: 1rem;
     }
   }
 
-  // Contact page
+  .accordion-text-paragraph {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    // width: 200%;
+  }
+
+  .tools-icons-size {
+    width: 60px;
+    height: 60px;
+    margin: .5rem;
+  }
+
+  // ? Contact page
+
+  .contacts {
+    margin-top: 10rem;
+  }
+
+  .contact-main-heading {
+    font-size: 6rem;
+    margin-left: 17rem;
+  }
 
 }
 
 
-// ! max-width: 420px
-@media only screen and (max-width: 420px) {
+// ! max-width: 414px - iPhone 6/7/8 Plus
+@media only screen and (max-width: 414px) {
 
-  // Landing page
+  // ? Landing page
+
+  .homepage-container {
+    height: 180vh;
+  }
+
+  nav {
+    margin-right: .7rem;
+  }
+
+  .top-navbar, .bottom-navbar {
+    margin-top: .5rem;
+  }
+
+  .top-navbar a h2, .bottom-navbar a h2 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .putting-margin-to-home-page {
+    width: 130%;
+  }
+
+  .my-introduction-heading {
+    margin-left: .5rem;
+    margin-top: 30rem;
+    h1 {
+      font-size: 10.5rem;
+    }
+    h2 {
+      font-size: 6rem;
+      margin-left: 1rem;
+    }
+  }
+
+  // ? About page
 
 
-  // About page
+  // ? Experience page
 
 
-  // Experience page
+  // ? Projects page
 
 
-  // Projects page
-
-
-  // Contact page
+  // ? Contact page
 
 }

@@ -6,15 +6,67 @@
   background: antiquewhite;
 }
 
+.scrolls {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1.25em;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: black;
+  opacity: .4;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: .8rem;
+}
+
+.scrolls .center {
+  font-size: 0.4rem;
+}
+
+.scrolls .scroll-indicator-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 25px;
+  background-color: #000;
+  margin: auto;
+  content: '';
+}
+
 .homepage-container {
   min-height: 100vh;
   font-family: "didot";
 }
 
 header {
-  margin: 2rem;
-  min-height: 93.2vh;
+  min-height: 100vh;
   position: relative;
+}
+
+.putting-margin-to-home-page {
+  padding: 2rem;
 }
 
 nav a {
@@ -28,9 +80,11 @@ nav a {
   display: inline-block;
 }
 
-nav:hover a {
+nav:hover a h2 {
   color: #720000;
   cursor: url("/circleTwo.35bfb7a0.svg"), auto;
+  padding: 2rem;
+  margin: -2rem;
 }
 
 .cursor-outside-container {
@@ -61,6 +115,7 @@ nav:hover a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 4rem;
 }
 
 .navbar-contacts-directions {
@@ -136,8 +191,8 @@ nav:hover a {
 }
 
 .positioning-brand-statement-paragraph {
-  margin-left: -4rem;
-  margin-top: 5rem;
+  margin-left: 28rem;
+  margin-top: -14.5rem;
   -webkit-animation: open 5s ease-in-out;
           animation: open 5s ease-in-out;
 }
@@ -166,6 +221,18 @@ nav:hover a {
   margin-top: 7rem;
 }
 
+.skills-positioning-container h3 {
+  font-size: 2rem;
+  font-family: 'DM Serif Display', serif;
+  border-bottom: 1px solid rgba(114, 0, 0, 0.4);
+}
+
+.skills-positioning-container h4 {
+  font-size: 1.5rem;
+  font-family: 'DM Serif Display', serif;
+  margin-top: 1rem;
+}
+
 .skills-icons {
   width: 100%;
   margin: 1rem;
@@ -178,25 +245,25 @@ nav:hover a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1rem;
   margin-bottom: 2rem;
   -webkit-animation: open 2s ease-in-out;
           animation: open 2s ease-in-out;
 }
 
 .overlay {
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-left: .5rem;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  height: 25%;
   width: 120%;
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -205,9 +272,12 @@ nav:hover a {
   margin: 1rem;
 }
 
+.container:hover {
+  cursor: url("/circleTwo.35bfb7a0.svg"), auto;
+}
+
 .container:hover .overlay {
   opacity: 1;
-  cursor: pointer;
 }
 
 .text {
@@ -220,6 +290,10 @@ nav:hover a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.my-photo {
+  width: 250px;
 }
 
 /* ! Projects section */
@@ -296,7 +370,7 @@ details summary {
   padding: .5rem 0;
   border-bottom: 1px solid black;
   position: relative;
-  cursor: pointer;
+  cursor: url("/circleTwo.35bfb7a0.svg"), auto;
   font-size: 1.25rem;
   font-weight: 300;
   list-style: none;
@@ -306,7 +380,7 @@ details summary {
 
 details summary::after {
   content: '+';
-  color: #d39700;
+  color: #720000;
   position: absolute;
   font-size: 1.75rem;
   line-height: 0;
@@ -353,8 +427,22 @@ details p {
           align-items: center;
 }
 
+.summary-positioning h3 {
+  font-size: 1.5rem;
+  font-family: didot;
+}
+
+.project-icon-container {
+  height: 75px;
+  width: 75px;
+}
+
 .project-icon {
   padding-right: 1rem;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .accordion-text {
@@ -374,13 +462,14 @@ details p {
 }
 
 .tools-icons-size {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 
 .accordion-text-paragraph {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* ! Experiences & Education */
@@ -435,7 +524,7 @@ details p {
   font-family: didot;
 }
 
-.experiences-description span {
+.experiences-description .span-slash {
   color: #720000;
 }
 
@@ -469,7 +558,7 @@ details p {
 }
 
 .about-paragraph p {
-  font-family: didot;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -523,6 +612,10 @@ details p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -683,7 +776,7 @@ details p {
   .summary-positioning .project-icon {
     width: 60px;
   }
-  .summary-positioning h2 {
+  .summary-positioning h3 {
     font-size: 1.5rem;
   }
 }

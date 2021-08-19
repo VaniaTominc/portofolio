@@ -47,7 +47,7 @@
     font-size: 1.5rem;
     font-family: didot;
   }
-  span {
+  .span-slash {
     color: rgb(114, 0, 0);
   }
   h5 {
@@ -83,7 +83,7 @@
 
 .about-paragraph {
   p {
-    font-family: didot;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
   }
 }
@@ -113,3 +113,5 @@
     animation: open 4s ease-in-out;
   }
 }
+
+

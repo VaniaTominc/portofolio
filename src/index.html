@@ -9,32 +9,39 @@
   <title>Vania Tominc Portofolio</title>
 </head>
 
-  <body>
-
+  <body class="cursor-outside-container">
     <div class="cursor-outside-container">
       <!-- ! Landing page -->
 
-      <div class="homepage-container">
-        <header>
-          <nav>
-            <div class="top-navbar">
-              <a href="#about"><h2>About</h2></a>
-              <a href="#experiences"><h2>Experience</h2></a>
-            </div>
-            <div class="bottom-navbar">
-              <a href="#projects"><h2>Projects</h2></a>
-              <a href="#contacts"><h2 class="navbar-contacts-directions">Contacts</h2></a>
-            </div>
-            <div class="cursor"></div>
-          </nav>
-          <div class="my-introduction-heading">
-            <h1>Vania Tominc</h1>
-            <h2>Junior full-stack developer</h2>
-          </div>
-        </header>
+      <div class="scrolls">
+        <span class="scroll-indicator-line"></span>
+        <div class="center"><span>mouse <br> scrolling</span></div>
+        <span class="scroll-indicator-line"></span>
       </div>
 
-      <div class="section-home" data-scroll-container>
+      <div class="homepage-container">
+        <div class="putting-margin-to-home-page">
+          <header>
+            <nav>
+              <div class="top-navbar">
+                <a href="#about"><h2>About</h2></a>
+                <a href="#experiences"><h2>Experience</h2></a>
+              </div>
+              <div class="bottom-navbar">
+                <a href="#projects"><h2>Projects</h2></a>
+                <a href="#contacts"><h2 class="navbar-contacts-directions">Contacts</h2></a>
+              </div>
+              <div class="cursor"></div>
+            </nav>
+            <div class="my-introduction-heading">
+              <h1>Vania Tominc</h1>
+              <h2>Junior full-stack developer</h2>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <!-- <div class="section-home" data-scroll-container>
         <section class="section-home-1" data-scroll-section>
           <h1>You should subscribe</h1>
           <p>
@@ -56,7 +63,7 @@
             The thrill of making my code work gives me even more motivation to learn 
             more.
           </p>
-        </section>
+        </section> -->
       </div>
     
 
@@ -72,7 +79,7 @@
                 </p>
               </div>
               <div class="about-paragraph">
-                <img src="https://via.placeholder.com/250" alt="my picture" class="project-icon my-photo-positioning" />
+                <img src="https://via.placeholder.com/250" alt="my picture" class="my-photo my-photo-positioning" />
                 <p class="accordion-text-paragraph positioning-brand-statement-paragraph">
                   I have always been interested in coding, 
                   initially chose another career, but finally decided to follow my dreams and 
@@ -84,8 +91,8 @@
               </div>
             </div>
             <div class="skills-positioning-container">
-              <h2>Skills</h2>
-              <h3>Development Tools</h3>
+              <h3>Skills</h3>
+              <h4>- Development Tools</h4>
               <div class="skills-icons-positioning">
                 <div class="container">
                   <img src="images/PNGIcons/bootstrapPNG.png" alt="Bootstrap" class="skills-icons" />           <!-- Bootstrap -->
@@ -161,7 +168,7 @@
                 </div>
               </div>
     
-              <h3>Management & Design Tools</h3>
+              <h4>- Management & Design Tools</h4>
               <div class="skills-icons-positioning">
                 <div class="container">
                   <img src="images/PNGIcons/figmaPNG.png" alt="Figma" class="skills-icons" />                   <!-- Figma -->
@@ -231,7 +238,7 @@
                 </div>
               </div>
     
-              <h3>Currently learning</h3>
+              <h4>- Currently learning</h4>
               <div class="skills-icons-positioning">
                 <div class="container">
                   <img src="images/PNGIcons/swiftPNG.png" alt="Swift" class="skills-icons" />                    <!-- Swift -->
@@ -253,7 +260,7 @@
         <div class="experiences-education-wannabe-table">
           <div class="experiences-left-side">
             <div class="experiences-description experiences-two-padding">
-              <h3>SOFTWARE ENGINEERING IMMERSIVE STUDENT <span>|</span> General Assembly</h3>
+              <h3>SOFTWARE ENGINEERING IMMERSIVE STUDENT <span class="span-slash">|</span> General Assembly</h3>
               <h5>London, UK | May 2021 - Jul 2021</h5>
               <ul class="bullet-right">
                 <li class="accordion-text-paragraph">
@@ -265,7 +272,7 @@
               </ul>
             </div>
             <div class="experiences-description experiences-two-padding">
-              <h3>PERSONAL ASSISTANT <span>|</span> Active Care Group</h3>
+              <h3>PERSONAL ASSISTANT <span class="span-slash">|</span> Active Care Group</h3>
               <h5>Nationwide UK | Feb 2019 - Aug 2021</h5>
               <ul class="bullet-right">
                 <li class="accordion-text-paragraph">Supporting people with spinal cord injury to live an independent and active life.</li>
@@ -274,7 +281,8 @@
             </div>
             <br />
             <div class="experiences-description experiences-two-padding">
-              <h3>TOURIST GUIDE <span>|</span> Postojnska jama d.d.</h3>
+              <h3>TOURIST GUIDE <span class="span-slash">|</span> Postojnska jama d.d.</h3>
+              <a href="https://www.postojnska-jama.eu/en/" target="_blank"></a>
               <h5>Postojna, Slovenia | Jun 2006 - Oct 2018</h5>
               <ul class="bullet-right">
                 <li class="accordion-text-paragraph">Ability to perform, animate and communicate in public in a variety of different foreign languages and working in a multicultural, international environment.</li>
@@ -283,7 +291,7 @@
               </ul>
             </div>
             <div class="experiences-description">
-              <h3>BA and MSc STUDENT <span>|</span> University of Ljubljana</h3>
+              <h3>BA and MSc STUDENT <span class="span-slash">|</span> University of Ljubljana</h3>
               <h5>Ljubljana, Slovenia | Sep 2005 - Sep 2016</h5>
               <ul class="bullet-right">
                 <li class="accordion-text-paragraph">Two subject pre-Bologna Non Pedagogical Programme: Spanish and History.</li>
@@ -315,8 +323,10 @@
           <div class="changing-according-profile">
             <details>
               <summary class="summary-positioning">
-                <img src="https://via.placeholder.com/75" alt="babushka-image" class="project-icon" />
-                <h2>Project 04: Truff·l·uxury</h2>
+                <div class="project-icon-container">
+                  <img src="https://via.placeholder.com/75" alt="babushka-image" class="project-icon" />
+                </div>
+                <h3>PROJECT 04: Truff·l·uxury</h3>
               </summary>
               <div class="accordion-text">
                 <div class="project-image-media-query">
@@ -324,12 +334,12 @@
                 </div>
                 <div>
                   <div class="tools-icons-positioning">
-                    <img src="images/PNGIcons/ReactPNG.png" alt="React" title="React" class="tools-icons-size"/>                  <!-- React -->
-                    <img src="images/PNGIcons/PythonPNG.png" alt="Python" title="Python" class="tools-icons-size" />              <!-- Python -->
-                    <img src="images/PNGIcons/djangoPNG.png" alt="Django" title="Django" class="tools-icons-size" />              <!-- Django-->
-                    <img src="images/PNGIcons/postgresqlPNG.png" alt="PostgreSQL" title="PostgreSQL" class="tools-icons-size" />  <!-- Postgresql-->
-                    <img src="images/PNGIcons/bootstrapPNG.png" alt="Bootstrap" title="Bootstrap" class="tools-icons-size" />     <!-- Bootstrap -->
-                    <img src="images/PNGIcons/sassPNG.png" alt="Sass" title="Sass" class="tools-icons-size" />                    <!-- Sass -->
+                    <img src="images/PNGIcons/ReactPNG.png" alt="React" class="tools-icons-size"/>                  <!-- React -->
+                    <img src="images/PNGIcons/PythonPNG.png" alt="Python" class="tools-icons-size" />               <!-- Python -->
+                    <img src="images/PNGIcons/djangoPNG.png" alt="Django" class="tools-icons-size" />               <!-- Django-->
+                    <img src="images/PNGIcons/postgresqlPNG.png" alt="PostgreSQL" class="tools-icons-size" />       <!-- Postgresql-->
+                    <img src="images/PNGIcons/bootstrapPNG.png" alt="Bootstrap" class="tools-icons-size" />         <!-- Bootstrap -->
+                    <img src="images/PNGIcons/sassPNG.png" alt="Sass" class="tools-icons-size" />                   <!-- Sass -->
                   </div>
                   <p class="accordion-text-paragraph">
                     I built a full-stack app which was rooted in <strong>Python</strong>, <strong>Django</strong> and <strong>PostgreSQL</strong> on the back-end and 
@@ -347,8 +357,10 @@
           <div class="changing-according-profile">
             <details>
               <summary class="summary-positioning">
-                <img src="https://via.placeholder.com/75" alt="babushka-image" class="project-icon" />
-                <h2>Project 03: Pistis Trust</h2>
+                <div class="project-icon-container">
+                  <img src="./images/projectsIcons/project03.png" alt="babushka-image" class="project-icon" />
+                </div>
+                <h3>PROJECT 03: Pistis Trust</h3>
               </summary>
               <div class="accordion-text">
                 <div class="project-image-media-query">
@@ -380,8 +392,10 @@
           <div class="changing-according-profile">
             <details>
               <summary class="summary-positioning">
-                <img src="https://via.placeholder.com/75" alt="babushka-image" class="project-icon" />
-                <h2>Project 02: Rick and Morty</h2>
+                <div class="project-icon-container">
+                  <img src="./images/projectsIcons/project02.png" alt="babushka-image" class="project-icon" />
+                </div>
+                <h3>PROJECT 02: Rick and Morty</h3>
               </summary>
               <div class="accordion-text">
                 <div class="project-image-media-query">
@@ -409,8 +423,10 @@
           <div class="changing-according-profile">
             <details>
               <summary class="summary-positioning">
-                <img src="https://via.placeholder.com/75" alt="babushka-image" class="project-icon" />
-                <h2>Project 01: Babushka Land</h2>
+                <div class="project-icon-container">
+                  <img src="./images/projectsIcons/project01.png" alt="babushka-image" class="project-icon" />
+                </div>
+                <h3>PROJECT 01: Babushka Land</h3>
               </summary>
               <div class="accordion-text">
                 <div class="project-image-media-query">

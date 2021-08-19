@@ -25,8 +25,8 @@
 }
 
 .positioning-brand-statement-paragraph {
-  margin-left: -4rem;
-  margin-top: 5rem;
+  margin-left: 28rem;
+  margin-top: -14.5rem;
   animation: open 5s ease-in-out;
   // z-index: 1;
 }
@@ -45,6 +45,17 @@
 .skills-positioning-container {
   width: 80%;
   margin-top: 7rem;
+  h3 {
+    font-size: 2rem;
+    font-family: 'DM Serif Display', serif;
+    border-bottom: 1px solid rgba(114, 0, 0, .4);
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-family: 'DM Serif Display', serif;
+    margin-top: 1rem;
+    // color: rgb(114, 0, 0);
+  }
 }
 
 .skills-icons {
@@ -56,23 +67,23 @@
 
 .skills-icons-positioning {
   display: flex;
-  margin-top: 1rem;
   margin-bottom: 2rem;
   animation: open 2s ease-in-out;
 }
 
 .overlay {
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-left: .5rem;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  height: 25%;
   width: 120%;
   opacity: 0;
   transition: .5s ease;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -81,9 +92,13 @@
   margin: 1rem;
 }
 
+.container:hover {
+  cursor: url('../images/circleTwo.svg'), auto;
+}
+
 .container:hover .overlay {
   opacity: 1;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .text {
@@ -97,5 +112,9 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.my-photo {
+  width: 250px;
 }
 

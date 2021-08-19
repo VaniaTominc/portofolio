@@ -3281,8 +3281,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var scroll = new _locomotiveScroll.default({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-  offset: ["30%", 100],
+  offset: ['30%', 100],
   multiplier: 1
+});
+var cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', function (event) {
+  cursor.style.left = event.pageX + 'px';
+  cursor.style.top = event.pageY + 'px';
 });
 },{"locomotive-scroll":"../node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

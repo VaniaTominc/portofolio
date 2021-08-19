@@ -8,19 +8,29 @@
 }
 
 header {
-  // border: 1px solid red;
   margin: 2rem;
   min-height: 93.2vh;
   position: relative;
 }
 
-nav {
-  a {
+nav a {
     font-size: 1.5rem;
     opacity: .3;
     text-decoration: none;
     color: black;
-  }
+    transition: 0.2s;
+    position: relative;
+    display: inline-block;
+}
+
+nav:hover a {
+  color: rgb(114, 0, 0);;
+  cursor: url('../images/circleTwo.svg'), auto;
+}
+
+.cursor-outside-container {
+  min-height: 100vh;
+  cursor: url('../images/circle.svg'), auto;
 }
 
 .top-navbar {
@@ -44,7 +54,6 @@ nav {
 }
 
 .my-introduction-heading {
-  // border: 1px solid blue;
 
   margin-top: 18rem;
   h1 {

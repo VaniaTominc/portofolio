@@ -23,14 +23,14 @@
 .experiences-education-wannabe-table {
   display: flex;
   width: 80%;
-  height: 400px;
-  border: 1px solid red;
+  min-height: 500px;
   margin: 4rem auto;
 }
 
 .experiences-left-side {
   width: 50%;
   padding: 2rem;
+  transition: 2s;
 }
 
 .education-right-side {
@@ -40,4 +40,76 @@
 
 .bullet-right {
   padding-left: 1rem;
+}
+
+.experiences-description {
+  h3 {
+    font-size: 1.5rem;
+    font-family: didot;
+  }
+  span {
+    color: rgb(114, 0, 0);
+  }
+  h5 {
+    font-size: 1.2rem;
+    font-family: didot;
+    padding-bottom: .5rem;
+  }
+  li {
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    // letter-spacing: .1rem;
+  }
+  .heading-positioning-experience {
+    display: flex;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400&display=swap');
+
+.my-introduction-heading {
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    opacity: .7;
+    margin-left: 2.6rem;
+  }
+}
+
+.positioning-about-main-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+}
+
+.about-paragraph {
+  p {
+    font-family: didot;
+    font-size: 1.5rem;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.experiences-two-padding {
+  padding-bottom: 2rem;
+}
+
+.experiences-right-side {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  svg {
+    width: 300px;
+    opacity: 0;
+    transition: 4s;
+  }
+}
+
+.experiences-right-side:hover {
+  svg {
+    opacity: .5;
+    animation: open 4s ease-in-out;
+  }
 }

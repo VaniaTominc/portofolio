@@ -199,7 +199,6 @@
     "fragment-cache": "^0.2.1",
     "fresh": "^0.5.2",
     "fs.realpath": "^1.0.0",
-    "fsevents": "^1.2.13",
     "function-bind": "^1.1.1",
     "gensync": "^1.0.0-beta.2",
     "get-intrinsic": "^1.1.1",
@@ -554,5 +553,8 @@
     "dev": "parcel src/index.html",
     "prod": "parcel build src/index.html"
   },
-  "keywords": []
+  "keywords": [],
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  }
 }

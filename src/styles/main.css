@@ -611,9 +611,71 @@ details p {
 
 /* ! Contacts */
 .contacts {
-  min-height: 75vh;
+  margin-top: 8rem;
+  min-height: 100vh;
   -webkit-animation: open 4s ease-in-out;
           animation: open 4s ease-in-out;
+}
+
+.outside-contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 8rem;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  margin-top: 7rem;
+}
+
+.contact-header h2 {
+  font-family: 'DM Serif Display';
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.positioning-contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+.positioning-contact-details .contact-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.positioning-contact-details a {
+  text-decoration: none;
+  color: black;
+}
+
+.positioning-contact-details a:hover {
+  cursor: url("../images/circleTwo.svg"), auto;
+  padding: 2rem 0;
+  margin: -2rem 0;
+}
+
+.positioning-contact-details p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* ! Footer */
@@ -622,7 +684,6 @@ details p {
   position: relative;
   height: 4rem;
   margin-top: -4rem;
-  background: red;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -632,10 +693,12 @@ details p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
+.footer p {
+  font-family: 'didot';
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -729,6 +792,9 @@ body {
   .project-details-width {
     margin-bottom: 10rem;
   }
+  .contact-header {
+    margin-left: -9rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -762,6 +828,12 @@ body {
   }
   .projects {
     width: 115%;
+  }
+  .contact-header {
+    margin-left: -6rem;
+  }
+  .footer {
+    width: 125%;
   }
 }
 
@@ -946,11 +1018,17 @@ body {
     margin: .5rem;
   }
   .contacts {
-    margin-top: 10rem;
+    margin: 10rem 0;
   }
   .contact-main-heading {
     font-size: 6rem;
-    margin-left: 17rem;
+    margin-left: 8rem;
+  }
+  .positioning-contact-details p {
+    font-size: 1.7rem;
+  }
+  .footer {
+    width: 150%;
   }
 }
 
@@ -1032,7 +1110,7 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
-  .experiences #experiences-media-query-phone {
+  .experiences .experiences-media-query-phone {
     margin-right: -50rem;
     width: 175%;
   }
@@ -1081,11 +1159,78 @@ body {
   .accordion-text-paragraph {
     font-size: 2rem;
   }
+  .contacts {
+    margin-bottom: 15rem;
+  }
   .contact-main-heading {
     margin-left: -5rem;
     font-size: 12rem;
     color: rgba(0, 0, 0, 0.5);
     opacity: .1;
+  }
+  .positioning-contact-details {
+    margin-left: -4rem;
+  }
+  .positioning-contact-details p {
+    font-size: 2rem;
+  }
+  .footer {
+    width: 200%;
+    margin-left: -1rem;
+  }
+  .footer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .homepage-container {
+    width: 160%;
+  }
+  .top-navbar a h2, .bottom-navbar a h2 {
+    font-size: 4.5rem;
+  }
+  .my-introduction-heading {
+    margin-top: 35rem;
+  }
+  .my-introduction-heading h1 {
+    font-size: 11rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 6.5rem;
+  }
+  .about {
+    margin-top: 20rem;
+  }
+  .positioning-about-main-heading {
+    font-size: 3rem;
+    width: 700px;
+  }
+  .about-paragraph .my-photo-positioning {
+    margin-top: 28rem;
+    margin-left: -18rem;
+  }
+  .about-paragraph p {
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    margin-left: -45rem;
+  }
+  .skills-positioning-container {
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .experiences .experiences-media-query-phone {
+    margin-right: -50rem;
+    width: 200%;
+  }
+  .dashed .accordion-text-paragraph {
+    margin-left: -2.5rem;
+  }
+  .projects {
+    width: 240%;
+  }
+  .footer {
+    margin-left: 1rem;
   }
 }
 

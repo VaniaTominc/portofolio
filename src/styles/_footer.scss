@@ -4,12 +4,17 @@
   position: relative;
   height: 4rem;
   margin-top: -4rem;
-  background: red;
   justify-content: center;
   display: flex;
   align-items: center;
+  width: 100%;
+
+  p {
+    font-family: 'didot';
+    font-size: 1.1rem;
+  }
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
+// body {
+//   font-family: 'Open Sans', sans-serif;
+// }

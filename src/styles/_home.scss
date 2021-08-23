@@ -21,7 +21,7 @@
 .scroll-home {
   position: fixed;
   bottom: 800px;
-  right: .5rem;
+  right: 1.05rem;
   width: 60px;
   height: 60px;
   background: antiquewhite url('../images/SVGIcons/home-icon.svg');
@@ -87,16 +87,15 @@
   .skills-positioning-container h3 {
     border-bottom: 1px solid rgba(114, 0, 0, 1);
   }
+  details summary {
+    border-color: antiquewhite;
+  }
 }
 
 
 body {
   background: var(--background);
   color: var(--foreground);
-}
-
-.intro {
-  background: linear-gradient(120deg, var(--clr-primary));
 }
 
 .dark-mode-toggle {

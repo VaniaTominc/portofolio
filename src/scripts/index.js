@@ -57,11 +57,18 @@ window.addEventListener('scroll', () => {
   scrollingHomeButton.classList.toggle('active', window.scrollY > 600)
 })
 
-window.addEventListener('click', () => {
+const scrollingTop = document.querySelector('.home-button')
+
+scrollingTop.addEventListener('click', () => {
   // console.log('clicked')
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
 })
+
+// function topFunction() {
+//   document.body.scrollTop = 0
+//   document.documentElement.scrollTop = 0
+// }
 

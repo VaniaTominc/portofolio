@@ -57,7 +57,7 @@ window.addEventListener('scroll', () => {
   scrollingHomeButton.classList.toggle('active', window.scrollY > 600)
 })
 
-function scrollToTop(){
+function scrollingHome(){
   window.scrollTo({
     top: 0,
     behavior: 'smooth'

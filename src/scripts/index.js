@@ -57,7 +57,10 @@ window.addEventListener('scroll', () => {
   scrollingHomeButton.classList.toggle('active', window.scrollY > 600)
 })
 
-const scrollingHome = () => {
+
+//   
+
+function scrollingHome(){
   window.scrollTo({
     top: 0,
     behavior: 'smooth'

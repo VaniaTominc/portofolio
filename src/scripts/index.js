@@ -57,22 +57,11 @@ window.addEventListener('scroll', () => {
   scrollingHomeButton.classList.toggle('active', window.scrollY > 600)
 })
 
-
-const scrollBackToTop = document.querySelector('.scroll-back-to-top')
-
 window.addEventListener('click', () => {
-  console.log('clicked')
+  // console.log('clicked')
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
 })
-
-// function scrollingHome(){
-//   window.scrollTo({
-//     top: 0,
-//     behavior: 'smooth'
-//   })
-//   console.log('is it working?')
-// }
 

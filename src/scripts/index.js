@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
 })
 
 const scrollToTop = () => {
-  window.scrollTo({
+  return window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })

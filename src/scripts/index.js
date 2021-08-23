@@ -58,13 +58,21 @@ window.addEventListener('scroll', () => {
 })
 
 
-//   
+const scrollBackToTop = document.querySelector('.scroll-back-to-top')
 
-function scrollingHome(){
+window.addEventListener('click', () => {
+  console.log('clicked')
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
-  console.log('is it working?')
-}
+})
+
+// function scrollingHome(){
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   })
+//   console.log('is it working?')
+// }
 

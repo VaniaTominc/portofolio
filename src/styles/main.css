@@ -30,6 +30,7 @@
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .scroll-home {
@@ -219,8 +220,8 @@ nav:hover a h2 {
   margin: -2rem;
 }
 
-* {
-  cursor: url("../images/circle.svg"), auto;
+.cursor-normal {
+  cursor: url("../images/circle.svg") 12 10, auto;
 }
 
 .top-navbar {

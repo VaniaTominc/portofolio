@@ -67,5 +67,12 @@ scrollingTop.addEventListener('click', () => {
   })
 })
 
+// ! hamburger navbar
+const hamburger = document.querySelector('.nav-icon')
+const sidebar = document.querySelector('.side-navbar')
 
-
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active')
+  sidebar.classList.toggle('active')
+  // console.log('burger clicked')
+})

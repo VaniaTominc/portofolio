@@ -20,19 +20,6 @@
   text-indent: -5px;
 }
 
-.toggle-burger {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background: #000 url("../images/menu.png");
-  background-size: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
 .scroll-home {
   position: fixed;
   bottom: 800px;
@@ -45,7 +32,7 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 99997;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: .5s;
@@ -79,7 +66,7 @@
   opacity: .6;
 }
 
-.darkmode nav:hover a {
+.darkmode nav:hover a h2 {
   opacity: 1;
 }
 
@@ -214,10 +201,13 @@ nav a {
 }
 
 nav:hover a h2 {
-  color: #720000;
   cursor: url("../images/circleTwo.svg"), auto;
   padding: 2rem;
   margin: -2rem;
+}
+
+nav a h2:hover {
+  color: #720000;
 }
 
 .cursor-normal {
@@ -818,12 +808,143 @@ details p {
 }
 
 @media only screen and (max-width: 1024px) {
+  .putting-margin-to-home-page {
+    padding: 0;
+  }
+  .nav-icon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    right: 32px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 999999;
+  }
+  .nav-icon span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  .nav-icon span:nth-child(1) {
+    top: 0px;
+  }
+  .nav-icon span:nth-child(2), .nav-icon span:nth-child(3) {
+    top: 18px;
+  }
+  .nav-icon span:nth-child(4) {
+    top: 36px;
+  }
+  .nav-icon.active span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .nav-icon.active span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .nav-icon.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .nav-icon.active span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  .side-navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: calc(100% - 500px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: black;
+    min-height: 100vh;
+    z-index: 99998;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .side-navbar nav a {
+    opacity: .8;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .side-navbar .top-navbar {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .side-navbar .top-navbar h2 {
+    color: antiquewhite;
+    font-size: 4rem;
+  }
+  .side-navbar .bottom-navbar {
+    bottom: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .side-navbar .bottom-navbar h2 {
+    color: antiquewhite;
+    font-size: 4rem;
+  }
+  .side-navbar .bottom-navbar .navbar-contacts-directions {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+  .side-navbar.active {
+    right: 0;
+  }
+  nav:hover a h2 {
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+  }
+  .darkmode .side-navbar {
+    background: antiquewhite;
+  }
+  .darkmode .top-navbar h2, .darkmode .bottom-navbar h2 {
+    color: black;
+  }
   .disabled {
     pointer-events: none;
-    margin-left: 2.9rem;
-  }
-  .disabled h1 {
-    opacity: .2;
   }
   .projects-media-query-hover {
     margin-left: 2.9rem;
@@ -1013,8 +1134,7 @@ details p {
   }
   nav:hover a h2 {
     pointer-events: none;
-    margin-right: -5rem;
-    color: black;
+    margin-right: -10rem;
   }
   .about {
     width: 150%;

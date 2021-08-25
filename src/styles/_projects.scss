@@ -61,8 +61,9 @@ details summary {
 details summary::after {
   content: '+';
   color: rgb(114, 0, 0);
+  margin-top: 1rem;
   position: absolute;
-  font-size: 1.75rem;
+  font-size: 3rem;
   line-height: 0;
   right: 0;
   transform-origin: center;
@@ -71,7 +72,7 @@ details summary::after {
 
 details[open] summary::after {
   transform: rotate(45deg);
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 details summary {

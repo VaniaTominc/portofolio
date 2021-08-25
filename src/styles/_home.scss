@@ -123,6 +123,45 @@
       }
     }
   }
+  .container-contact {
+    border-color: antiquewhite;
+    .underline {
+      border-bottom-color: antiquewhite;
+    }
+    input[type='text'], [type='email'], .select-subject, textarea {
+      border-bottom-color: antiquewhite;
+      color: antiquewhite;
+      opacity: .75;
+    }
+    ::-webkit-input-placeholder {
+      color: antiquewhite;
+      opacity: .75;
+    }
+    
+    :-moz-placeholder { 
+      color: antiquewhite;
+      opacity: .75;
+    }
+    
+    ::-moz-placeholder {
+      color: antiquewhite;
+      opacity: .75;
+    }
+    
+    :-ms-input-placeholder {
+      color: antiquewhite;
+      opacity: .75;
+    }
+
+    .form_button {
+      border-color: antiquewhite;
+      color: antiquewhite;
+    }
+
+    .select-subject {
+      background: url('https://svgshare.com/i/_Wk.svg') no-repeat right;
+    }
+  }
 }
 
 

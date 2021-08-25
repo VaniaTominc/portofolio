@@ -31,8 +31,10 @@
     display: flex;
     justify-content: center;
     img {
-      width: 50px;
+      width: 60px;
       margin: 0 25px;
+      padding: .5rem;
+      border-radius: 10px;
     }
   }
 

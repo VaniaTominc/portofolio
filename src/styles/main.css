@@ -148,6 +148,11 @@
   background-size: 16px;
 }
 
+.darkmode .tools-icons-size {
+  background: antiquewhite;
+  padding: .5rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -644,9 +649,9 @@ details p {
 }
 
 .tools-icons-size {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 15px 15px 0;
 }
 
 .accordion-text-paragraph {

@@ -112,6 +112,17 @@
   details summary {
     border-color: antiquewhite;
   }
+
+  .positioning-projects-buttons {
+    .cta {
+      &:before {
+        background: rgba(114, 0, 0, .8)
+      }
+      svg {
+        stroke: antiquewhite;
+      }
+    }
+  }
 }
 
 

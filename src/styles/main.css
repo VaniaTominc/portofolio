@@ -96,6 +96,14 @@
   border-color: antiquewhite;
 }
 
+.darkmode .positioning-projects-buttons .cta:before {
+  background: rgba(114, 0, 0, 0.8);
+}
+
+.darkmode .positioning-projects-buttons .cta svg {
+  stroke: antiquewhite;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -600,6 +608,93 @@ details p {
 .accordion-text-paragraph {
   font-size: 1.3rem;
   font-family: 'Raleway', sans-serif;
+}
+
+.positioning-projects-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.positioning-projects-buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.positioning-projects-buttons ul li {
+  list-style: none;
+}
+
+.positioning-projects-buttons ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: didot;
+}
+
+.positioning-projects-buttons ul li .cta {
+  position: relative;
+  margin: 0 10px;
+  padding: 17px 22px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.positioning-projects-buttons ul li .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(114, 0, 0, 0.2);
+  width: 56px;
+  height: 56px;
+  -webkit-transition: all .3 ease;
+  transition: all .3 ease;
+}
+
+.positioning-projects-buttons ul li .cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.positioning-projects-buttons ul li .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transition: all .3 ease;
+  transition: all .3 ease;
+}
+
+.positioning-projects-buttons ul li .cta:hover:before {
+  width: 100%;
+}
+
+.positioning-projects-buttons ul li .cta:hover svg {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.positioning-projects-buttons ul li .cta:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
 
 /* ! Experiences & Education */

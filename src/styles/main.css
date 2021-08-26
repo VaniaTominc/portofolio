@@ -490,7 +490,9 @@ nav a h2:hover {
 }
 
 .my-photo {
-  width: 250px;
+  width: 300px;
+  opacity: .9;
+  margin-left: 3rem;
 }
 
 /* ! Projects section */

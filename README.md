@@ -1,2 +1,2 @@
 # portofolio
-Pure HTML, CSS &amp; JavaScript
+Pure HTML, CSS &amp; Vanilla JavaScript

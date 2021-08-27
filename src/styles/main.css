@@ -328,11 +328,13 @@ nav a h2:hover {
   text-transform: uppercase;
   font-size: 12rem;
   color: #720000;
+  line-height: 1;
 }
 
 .my-introduction-heading h2 {
   font-size: 6rem;
-  margin-top: -3rem;
+  margin-top: -2rem;
+  margin-left: 2rem;
 }
 
 .section-home-1 {
@@ -830,12 +832,6 @@ details p {
   display: flex;
 }
 
-.my-introduction-heading h2 {
-  font-family: 'DM Serif Display', serif;
-  opacity: .7;
-  margin-left: 2.6rem;
-}
-
 .positioning-about-main-heading {
   font-family: 'DM Serif Display', serif;
   font-size: 2rem;
@@ -1077,7 +1073,7 @@ textarea {
   font-size: 1.1rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1360px) {
   .putting-margin-to-home-page {
     padding: 0;
   }
@@ -1100,7 +1096,7 @@ textarea {
     position: absolute;
     height: 9px;
     width: 100%;
-    background: #d3531a;
+    background: #900000;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -1213,6 +1209,9 @@ textarea {
   .darkmode .top-navbar h2, .darkmode .bottom-navbar h2 {
     color: black;
   }
+}
+
+@media only screen and (max-width: 1024px) {
   .disabled {
     pointer-events: none;
   }
@@ -1230,11 +1229,6 @@ textarea {
   }
   .my-introduction-heading .space-unicode {
     display: none;
-  }
-  .my-introduction-heading .tominc-positioning {
-    padding-top: -2rem;
-    margin-top: -3rem;
-    line-height: .8;
   }
   .my-introduction-heading h1 {
     font-size: 12rem;
@@ -1356,11 +1350,6 @@ textarea {
   }
   .my-introduction-heading .space-unicode {
     display: none;
-  }
-  .my-introduction-heading .tominc-positioning {
-    padding-top: -2rem;
-    margin-top: -3rem;
-    line-height: 1;
   }
   .my-introduction-heading h1 {
     font-size: 10rem;

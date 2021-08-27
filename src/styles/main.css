@@ -368,6 +368,38 @@ nav a h2:hover {
   transition: 1s;
 }
 
+.about-main-heading {
+  font-size: 8rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .2;
+  font-family: "didot";
+  -webkit-transition: .4s;
+  transition: .4s;
+  opacity: .4;
+  -webkit-animation: open 4s ease-in-out;
+          animation: open 4s ease-in-out;
+}
+
+.about-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .about-branding-picture {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,30 +419,19 @@ nav a h2:hover {
 }
 
 .positioning-brand-statement-paragraph {
-  margin-left: 28rem;
+  margin-left: 27rem;
   margin-top: -14.5rem;
   -webkit-animation: open 5s ease-in-out;
           animation: open 5s ease-in-out;
   z-index: 1;
+  width: 450px;
 }
 
 .positioning-about-main-heading {
   margin-top: 3rem;
   -webkit-animation: open 2s ease-in-out;
           animation: open 2s ease-in-out;
-}
-
-.projects-main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 480px;
 }
 
 .skills-positioning-container {
@@ -467,7 +488,7 @@ nav a h2:hover {
 
 .container {
   position: relative;
-  width: 75px;
+  width: 100px;
   margin: 1rem;
 }
 
@@ -1073,7 +1094,7 @@ textarea {
   font-size: 1.1rem;
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1575px) {
   .putting-margin-to-home-page {
     padding: 0;
   }
@@ -1209,6 +1230,77 @@ textarea {
   .darkmode .top-navbar h2, .darkmode .bottom-navbar h2 {
     color: black;
   }
+  .my-introduction-heading h1 {
+    margin-left: 3rem;
+  }
+  .my-introduction-heading h2 {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .positioning-about-main-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 11rem;
+  }
+  .positioning-about-main-heading p {
+    margin-right: -3rem;
+  }
+  .skills-positioning-container {
+    width: 75%;
+    margin-left: -5rem;
+  }
+  .my-photo-positioning {
+    margin-top: 11rem;
+    margin-left: 6rem;
+  }
+  .positioning-brand-statement-paragraph {
+    margin-top: 4rem;
+    margin-left: -12rem;
+    width: 800px;
+  }
+  .skills-icons-positioning {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .skills-icons {
+    width: 75px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .positioning-brand-statement-paragraph {
+    margin-left: -18rem;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .positioning-about-main-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 11rem;
+    width: 400px;
+  }
+  .positioning-about-main-heading p {
+    margin-right: -3rem;
+  }
+  .my-photo-positioning {
+    margin-top: 11rem;
+    margin-left: 6rem;
+  }
+  .positioning-brand-statement-paragraph {
+    margin-top: 4rem;
+    margin-left: -25rem;
+  }
+  .skills-icons-positioning {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1238,29 +1330,6 @@ textarea {
     margin-top: 3rem;
     line-height: .8;
     margin-left: 2rem;
-  }
-  .positioning-about-main-heading {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 11rem;
-    width: 400px;
-  }
-  .positioning-about-main-heading p {
-    margin-right: -3rem;
-  }
-  .my-photo-positioning {
-    margin-top: 11rem;
-    margin-left: 6rem;
-  }
-  .positioning-brand-statement-paragraph {
-    margin-top: 4rem;
-    margin-left: -25rem;
-  }
-  .skills-icons-positioning {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .experiences-left-side {
     width: 100%;
@@ -1679,6 +1748,13 @@ textarea {
 }
 
 @media only screen and (max-width: 375px) {
+  .nav-icon {
+    margin-right: 2rem;
+  }
+  .scroll-home {
+    right: 4rem;
+    background-size: 50px;
+  }
   .homepage-container {
     width: 160%;
   }
@@ -1703,12 +1779,15 @@ textarea {
   }
   .about-paragraph .my-photo-positioning {
     margin-top: 28rem;
-    margin-left: -18rem;
+    margin-left: -21rem;
   }
   .about-paragraph p {
     font-size: 2.2rem;
     margin-right: 1.5rem;
     margin-left: -45rem;
+  }
+  .about-paragraph .positioning-brand-statement-paragraph {
+    width: 650px;
   }
   .skills-positioning-container {
     width: 90%;
@@ -1721,8 +1800,30 @@ textarea {
   .dashed .accordion-text-paragraph {
     margin-left: -2.5rem;
   }
+  .about-container-media-query {
+    margin-left: -4.5rem;
+  }
+  .projects-main-heading {
+    margin-left: 8rem !important;
+  }
   .projects {
-    width: 240%;
+    width: 200%;
+  }
+  .project-details-width {
+    width: 130%;
+  }
+  .contact-main-heading {
+    width: 950px;
+    overflow: hidden;
+    font-size: 20rem;
+    overflow-wrap: break-word;
+    line-height: .8;
+    margin-left: -3rem;
+  }
+  .container-contact {
+    width: 200%;
+    margin-left: 4rem;
+    margin-bottom: 30rem;
   }
   .footer {
     margin-left: 1rem;

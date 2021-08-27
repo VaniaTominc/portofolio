@@ -1,5 +1,5 @@
-// ! Sorting navbar icon at 1575px
-@media only screen and (max-width: 1575px) {
+// ! Sorting navbar icon at 1360px
+@media only screen and (max-width: 1360px) {
 
   // -- Responsive navbar -- 
 
@@ -148,98 +148,7 @@
 
 // -- End navbar --
 
-.my-introduction-heading {
-  h1 {
-    margin-left: 3rem;
-  }
-  h2 {
-    margin-left: 5rem;
-  }
 }
-
-}
-
-// ! Sorting about page at 1500px
-@media only screen and (max-width: 1500px) {
-
-  // ? About page
-
-  .positioning-about-main-heading {
-    flex-direction: column;
-    margin-top: 11rem;
-    // width: 350px;
-    p {
-      margin-right: -3rem;
-    }
-  }
-
-  .skills-positioning-container {
-    width: 75%;
-    margin-left: -5rem;
-  }
-
-  .my-photo-positioning {
-    margin-top: 11rem;
-    margin-left: 6rem;
-  }
-
-  .positioning-brand-statement-paragraph {
-    margin-top: 4rem;
-    margin-left: -12rem;
-    width: 800px;
-  }
-
-  .skills-icons-positioning {
-    flex-wrap: wrap
-  }
-
-  .container {
-    .skills-icons {
-      width: 75px;
-    }
-  }
-
-}
-
-// ! max-width: 1330px - About section
-@media only screen and (max-width: 1350px) {
-  // ? About page
-
-  .positioning-brand-statement-paragraph {
-    margin-left: -18rem;
-  }
-
-}
-
-// ! max-width: 1225px - About section
-@media only screen and (max-width: 1225px) {
-  // ? About page
-
-  .positioning-about-main-heading {
-    flex-direction: column;
-    margin-top: 11rem;
-    width: 400px;
-    p {
-      margin-right: -3rem;
-    }
-  }
-
-  .my-photo-positioning {
-    margin-top: 11rem;
-    margin-left: 6rem;
-  }
-
-  .positioning-brand-statement-paragraph {
-    margin-top: 4rem;
-    margin-left: -25rem;
-  }
-
-  .skills-icons-positioning {
-    flex-wrap: wrap
-  }
-
-}
-
 
 // ! max-width: 1024px - iPad Pro
 @media only screen and (max-width: 1024px) {
@@ -278,30 +187,30 @@
     }
   }
 
-  // // ? About page
+  // ? About page
 
-  // .positioning-about-main-heading {
-  //   flex-direction: column;
-  //   margin-top: 11rem;
-  //   width: 400px;
-  //   p {
-  //     margin-right: -3rem;
-  //   }
-  // }
+  .positioning-about-main-heading {
+    flex-direction: column;
+    margin-top: 11rem;
+    width: 400px;
+    p {
+      margin-right: -3rem;
+    }
+  }
 
-  // .my-photo-positioning {
-  //   margin-top: 11rem;
-  //   margin-left: 6rem;
-  // }
+  .my-photo-positioning {
+    margin-top: 11rem;
+    margin-left: 6rem;
+  }
 
-  // .positioning-brand-statement-paragraph {
-  //   margin-top: 4rem;
-  //   margin-left: -25rem;
-  // }
+  .positioning-brand-statement-paragraph {
+    margin-top: 4rem;
+    margin-left: -25rem;
+  }
 
-  // .skills-icons-positioning {
-  //   flex-wrap: wrap
-  // }
+  .skills-icons-positioning {
+    flex-wrap: wrap
+  }
 
   // ? Experience page
 

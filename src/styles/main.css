@@ -1562,13 +1562,244 @@ textarea {
     height: 450px !important;
   }
   details summary::after {
-    margin-top: -2rem !important;
+    margin-top: -1.5rem !important;
   }
   .contacts {
     margin-top: -5rem;
   }
   .footer {
     margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  nav {
+    margin-right: .7rem;
+  }
+  .top-navbar, .bottom-navbar {
+    margin-top: .5rem;
+  }
+  .top-navbar a h2, .bottom-navbar a h2 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .putting-margin-to-home-page {
+    width: 135%;
+  }
+  .my-introduction-heading {
+    margin-left: .5rem;
+    margin-top: 30rem;
+  }
+  .my-introduction-heading h1 {
+    font-size: 10.5rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 6rem;
+    margin-left: 1rem;
+  }
+  .about {
+    margin-top: 8rem;
+  }
+  .projects-main-heading {
+    font-size: 20rem;
+    margin-top: 10rem;
+    opacity: .1 !important;
+    z-index: 1;
+    margin-left: 5rem !important;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .about-container-media-query {
+    margin-left: -5rem;
+  }
+  .about-paragraph p {
+    font-size: 2rem;
+    margin-right: -5rem;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+  .overlay {
+    margin-top: 7rem;
+    margin-left: .4rem;
+  }
+  .positioning-brand-statement-paragraph {
+    margin-left: -32.5rem;
+  }
+  .skills-positioning-container {
+    width: 100%;
+    margin-left: 4.5rem;
+  }
+  .skills-positioning-container h3 {
+    font-size: 2.8rem;
+  }
+  .skills-positioning-container h4 {
+    font-size: 2.3rem;
+  }
+  .skills-icons {
+    width: 80px;
+    padding: .5rem;
+  }
+  .skills-icons-positioning {
+    width: 115%;
+  }
+  .experiences {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .experiences .experiences-media-query-phone {
+    margin-right: -50rem;
+    width: 175%;
+  }
+  .experiences-main-heading {
+    font-size: 20rem;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    text-align: center;
+    opacity: .1 !important;
+    margin-left: -5.2rem;
+    margin-right: -19.8rem;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .experiences-description h3 {
+    font-size: 2.6rem;
+  }
+  .experiences-description h5 {
+    font-size: 1.9rem;
+  }
+  .experiences-description li {
+    font-size: 2rem;
+    margin-left: -.8rem;
+  }
+  .experiences-description ul li {
+    padding-left: 1em;
+    position: relative;
+  }
+  .experiences-description ul li:before {
+    content: '-';
+    position: absolute;
+    left: 0;
+  }
+  .projects {
+    width: 210%;
+  }
+  .project-details-width {
+    margin-left: -1.5rem;
+  }
+  .project-images-resize {
+    width: 680px;
+  }
+  .accordion-text-paragraph {
+    font-size: 2rem;
+  }
+  .contacts {
+    margin-bottom: 15rem;
+  }
+  .contact-main-heading {
+    margin-left: -5rem;
+    font-size: 12rem;
+    color: rgba(0, 0, 0, 0.5);
+    opacity: .1;
+  }
+  .positioning-contact-details {
+    margin-left: -4rem;
+  }
+  .positioning-contact-details p {
+    font-size: 2rem;
+  }
+  .footer {
+    width: 200%;
+    margin-left: -1rem;
+  }
+  .footer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-icon {
+    margin-right: 2rem;
+  }
+  .scroll-home {
+    right: 4rem;
+    background-size: 50px;
+  }
+  .homepage-container {
+    width: 160%;
+  }
+  .top-navbar a h2, .bottom-navbar a h2 {
+    font-size: 4.5rem;
+  }
+  .my-introduction-heading {
+    margin-top: 35rem;
+  }
+  .my-introduction-heading h1 {
+    font-size: 11rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 6.5rem;
+  }
+  .about {
+    margin-top: 20rem;
+  }
+  .positioning-about-main-heading {
+    font-size: 3rem;
+    width: 700px;
+  }
+  .about-paragraph .my-photo-positioning {
+    margin-top: 28rem;
+    margin-left: -21rem;
+  }
+  .about-paragraph p {
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    margin-left: -45rem;
+  }
+  .about-paragraph .positioning-brand-statement-paragraph {
+    width: 650px;
+  }
+  .skills-positioning-container {
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .experiences .experiences-media-query-phone {
+    margin-right: -50rem;
+    width: 200%;
+  }
+  .dashed .accordion-text-paragraph {
+    margin-left: -2.5rem;
+  }
+  .about-container-media-query {
+    margin-left: -4.5rem;
+  }
+  .projects-main-heading {
+    margin-left: 8rem !important;
+  }
+  .projects {
+    width: 200%;
+  }
+  .project-details-width {
+    width: 130%;
+  }
+  .contact-main-heading {
+    width: 950px;
+    overflow: hidden;
+    font-size: 20rem;
+    overflow-wrap: break-word;
+    line-height: .8;
+    margin-left: -3rem;
+  }
+  .container-contact {
+    width: 200%;
+    margin-left: 4rem;
+    margin-bottom: 30rem;
+  }
+  .footer {
+    margin-left: 1rem;
   }
 }
 

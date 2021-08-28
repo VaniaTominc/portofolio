@@ -602,18 +602,19 @@
 
     .summary-positioning {
       .project-icon {
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
       h3 {
         margin-left: 5rem;
       }
       .project-images-resize {
-        width: 600px !important;
+        width: 100%;
+        height: 100%;
       }
     }
 
     .details summary::after {
-      margin-bottom: 2rem;
+      margin-bottom: 2rem !important;
     }
 
     // ? Contact section

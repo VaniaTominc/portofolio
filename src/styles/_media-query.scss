@@ -601,11 +601,14 @@
     }
 
     .summary-positioning {
-      .project-icon-container {
+      .project-icon {
         margin-top: 3rem;
       }
       h3 {
         margin-left: 5rem;
+      }
+      .project-images-resize {
+        width: 600px !important;
       }
     }
 

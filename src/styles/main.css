@@ -1522,7 +1522,7 @@ textarea {
     width: 50%;
   }
   .homepage-container {
-    margin-top: 20rem;
+    margin-top: 100rem !important;
   }
   .about {
     margin-top: -45rem;

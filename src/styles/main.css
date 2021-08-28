@@ -1521,9 +1521,6 @@ textarea {
   .side-navbar {
     width: 50%;
   }
-  .side-navbar .top-navbar {
-    margin-top: -16rem;
-  }
   .about {
     margin-top: -45rem;
   }

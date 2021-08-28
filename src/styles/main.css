@@ -190,7 +190,7 @@ body {
 }
 
 .toggle-button-position button {
-  margin-top: 2.5%;
+  margin-top: 2.5vh;
 }
 
 .scrolls {
@@ -1522,10 +1522,10 @@ textarea {
     width: 50%;
   }
   .toggle-button-position button {
-    margin-top: -30rem;
+    margin-top: -20rem;
   }
   .nav-icon {
-    margin-top: -30rem;
+    margin-top: -20rem;
   }
   .about {
     margin-top: -45rem;

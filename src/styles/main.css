@@ -1522,7 +1522,10 @@ textarea {
     width: 50%;
   }
   .toggle-button-position button {
-    margin-top: -10rem !important;
+    margin-top: -50rem;
+  }
+  .nav-icon {
+    margin-top: -50rem;
   }
   .about {
     margin-top: -45rem;

@@ -1235,6 +1235,10 @@ textarea {
   .darkmode .top-navbar h2, .darkmode .bottom-navbar h2 {
     color: black;
   }
+  .darkmode .about-main-heading, .darkmode .experiences-main-heading, .darkmode .projects-main-heading, .darkmode .contact-main-heading {
+    color: antiquewhite;
+    opacity: .1 !important;
+  }
   .my-introduction-heading h1 {
     margin-left: 3rem;
   }
@@ -1282,6 +1286,60 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .my-introduction-heading h2 {
+    font-size: 5rem;
+  }
+  .about-main-container {
+    margin-left: -5rem;
+  }
+  .about-main-heading {
+    font-size: 13rem;
+    margin-top: 10rem;
+    opacity: .05 !important;
+    z-index: -1;
+    margin-left: 1.5rem !important;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .experiences {
+    margin-top: 13rem;
+  }
+  .experiences-main-heading {
+    font-size: 13rem;
+    margin-left: -2.5rem;
+    overflow: hidden;
+    line-height: 1;
+    z-index: -1;
+    opacity: .05;
+  }
+  .skills-positioning-container {
+    width: 80%;
+    margin-left: -2rem;
+  }
+  .container {
+    margin: .5rem .5rem 1rem;
+  }
+  .text {
+    margin-left: -.9rem;
+  }
+  .projects-main-heading {
+    font-size: 13rem;
+    line-height: .35;
+    opacity: .05;
+    z-index: -1;
+  }
+  .project-details-width {
+    width: 80%;
+    margin-left: 1.5rem;
+  }
+  .contact-main-heading {
+    font-size: 13rem;
+    opacity: .05;
+    margin-left: -5rem;
+    z-index: -1;
+  }
+}
+
 @media only screen and (max-width: 1225px) {
   .positioning-about-main-heading {
     -webkit-box-orient: vertical;
@@ -1308,6 +1366,12 @@ textarea {
   }
 }
 
+@media screen and (max-height: 800px) and (max-width: 1024px) {
+  .about {
+    margin-top: -20rem !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .disabled {
     pointer-events: none;
@@ -1328,19 +1392,48 @@ textarea {
     display: none;
   }
   .my-introduction-heading h1 {
-    font-size: 12rem;
-  }
-  .my-introduction-heading h2 {
-    font-size: 6rem;
-    margin-top: 3rem;
+    font-size: 11rem;
+    margin-top: -3rem;
     line-height: .8;
     margin-left: 2rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 4.5rem;
+    margin-top: 3rem;
+    line-height: .8;
+    margin-left: 3.5rem;
+  }
+  .about {
+    margin-top: -50rem;
+  }
+  .about-main-heading {
+    margin-left: 3.8rem !important;
+  }
+  .positioning-about-main-heading {
+    margin-left: -1rem;
+  }
+  .positioning-brand-statement-paragraph {
+    margin-left: -25rem;
+  }
+  .my-photo-positioning {
+    margin-left: 4rem;
   }
   .experiences-left-side {
     width: 100%;
   }
   .experiences-right-side {
     display: none;
+  }
+  .experiences {
+    margin-bottom: 16rem;
+  }
+  .experiences-main-heading {
+    margin-left: -.2rem;
+    overflow-wrap: break-word;
+    line-height: .78;
+  }
+  .projects {
+    margin-bottom: 18rem;
   }
   .accordion-text {
     -webkit-box-orient: vertical;
@@ -1365,10 +1458,13 @@ textarea {
             justify-content: center;
   }
   .project-details-width {
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
+    margin-left: -.8rem;
   }
-  .contact-header {
-    margin-left: -9rem;
+  .contact-main-heading {
+    overflow: hidden;
+    line-height: .8;
+    margin-left: -3rem;
   }
 }
 
@@ -1396,20 +1492,6 @@ textarea {
   }
   .experiences {
     margin-top: 13rem;
-  }
-  .experiences-main-heading {
-    font-size: 13rem;
-    margin-left: 0;
-    overflow-wrap: break-word;
-    line-height: .72;
-    z-index: -1;
-  }
-  .experiences-main-heading .exper {
-    opacity: .1;
-    z-index: 1;
-  }
-  .experiences-main-heading .ience {
-    opacity: .1;
   }
   .skills-positioning-container {
     width: 80%;

@@ -185,9 +185,11 @@ body {
 }
 
 .toggle-button-position {
-  position: relative;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  
+  // margin: 0 auto;
+  // display: flex;
+  // justify-content: center;
   button {
     margin-top: 2rem;
   }

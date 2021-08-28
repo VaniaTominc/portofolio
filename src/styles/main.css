@@ -1519,6 +1519,46 @@ textarea {
   }
 }
 
+@media screen and (max-height: 1194px) and (max-width: 834px) {
+  .side-navbar {
+    width: 50%;
+  }
+  .side-navbar .top-navbar {
+    margin-top: -16rem;
+  }
+  .about {
+    margin-top: -45rem;
+  }
+  .positioning-about-main-heading {
+    width: 350px;
+  }
+  .positioning-brand-statement-paragraph {
+    width: 650px;
+    margin-left: -22rem;
+  }
+  .my-photo {
+    width: 250px;
+  }
+  .my-photo-positioning {
+    margin-left: 1rem;
+  }
+  .experiences-main-heading {
+    margin-top: -5rem;
+  }
+  .projects {
+    margin-top: -8rem;
+  }
+  .project-details-width {
+    margin-left: -2.3rem;
+  }
+  .contacts {
+    margin-top: -5rem;
+  }
+  .footer {
+    margin-top: 6rem;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .homepage-container {
     width: 122%;

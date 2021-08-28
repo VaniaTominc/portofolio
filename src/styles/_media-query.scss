@@ -322,18 +322,17 @@
 
 }
 
-// ! max-width: 1024 px and max-height: 800px - Medium Screen
+// ! max-width: 1024px and max-height: 800px - Medium Screen
 
 @media screen and (max-height: 800px)  {
   @media screen and (max-width: 1024px)  {
    
     .about {
-      margin-top: -20rem !important;          // I had to use !important, otherwise the ipad pro 12' specifics were overwriting my medium screen specificts.
+      margin-top: -20rem !important;          // I had to use !important, otherwise the iPad Pro 12' specifics were overwriting my medium screen specifics.
     }
 
   }
 }
-
 
 
 // ! max-width: 1024px - iPad Pro 12
@@ -507,21 +506,6 @@
     margin-top: 13rem;
   }
 
-  // .experiences-main-heading {
-  //   font-size: 13rem;
-  //   margin-left: 0;
-  //   overflow-wrap: break-word;
-  //   line-height: .72;
-  //   z-index: -1;
-  //   .exper {
-  //     opacity: .1;
-  //     z-index: 1;
-  //   }
-  //   .ience {
-  //     opacity: .1;
-  //   }
-  // }
-
   .skills-positioning-container {
     width: 80%;
     margin-left: -2rem; 
@@ -554,6 +538,73 @@
 }
 
 // ! max-width: 834px (height 1194px) - iPad Pro 11'
+
+@media screen and (max-height: 1194px)  {
+  @media screen and (max-width: 834px) {
+
+    // ? Side navbar
+
+    .side-navbar {
+      width: 50%;
+      .top-navbar {
+        margin-top: -16rem;
+      }
+    }
+
+    // ? About section
+
+    .about {
+      margin-top: -45rem;
+    }
+
+    .positioning-about-main-heading {
+      width: 350px;
+    }
+
+    .positioning-brand-statement-paragraph {
+      width: 650px;
+      margin-left: -22rem;
+    }
+
+    .my-photo {
+      width: 250px;
+    }
+
+    .my-photo-positioning {
+      margin-left: 1rem;
+    }
+
+    // ? Experience section
+
+    .experiences-main-heading {
+      margin-top: -5rem;
+    }
+
+    // ? Projects section
+
+    .projects {
+      margin-top: -8rem;
+    }
+
+    .project-details-width {
+      margin-left: -2.3rem;
+    }
+
+    // ? Contact section
+
+    .contacts {
+      margin-top: -5rem;
+    }
+
+
+    // ? Footer
+
+    .footer {
+      margin-top: 6rem;
+    }
+
+  } 
+}
 
 
 // ! max-width: 800px - iPad

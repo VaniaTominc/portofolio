@@ -1552,6 +1552,11 @@ textarea {
   .project-details-width {
     margin-left: -2.3rem;
   }
+  .project-icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .contacts {
     margin-top: -5rem;
   }

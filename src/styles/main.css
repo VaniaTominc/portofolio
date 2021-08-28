@@ -1553,13 +1553,13 @@ textarea {
     margin-left: -2.3rem;
   }
   .summary-positioning .project-icon-container {
-    margin-right: 3rem;
+    margin-top: 3rem;
   }
   .summary-positioning h3 {
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
   .details summary::after {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .contacts {
     margin-top: -5rem;

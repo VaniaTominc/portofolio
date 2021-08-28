@@ -613,8 +613,8 @@
       height: 450px !important;
     }
 
-    .details summary {
-      margin-bottom: 2rem !important;
+    details summary::after {
+      margin-top: -2rem !important;
     }
 
     // ? Contact section

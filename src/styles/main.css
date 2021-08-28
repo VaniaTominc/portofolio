@@ -1561,8 +1561,8 @@ textarea {
   img.project-images-resize {
     height: 450px !important;
   }
-  .details summary {
-    margin-bottom: 2rem !important;
+  details summary::after {
+    margin-top: -2rem !important;
   }
   .contacts {
     margin-top: -5rem;

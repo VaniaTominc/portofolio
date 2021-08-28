@@ -551,8 +551,10 @@
       }
     }
 
-    .homepage-container {
-      margin-top: 100rem !important;
+    .toggle-button-position {
+      button {
+        margin-top: -10rem !important;
+      }
     }
 
     // ? About section

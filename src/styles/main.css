@@ -1521,8 +1521,8 @@ textarea {
   .side-navbar {
     width: 50%;
   }
-  .homepage-container {
-    margin-top: 100rem !important;
+  .toggle-button-position button {
+    margin-top: -10rem !important;
   }
   .about {
     margin-top: -45rem;

@@ -1558,8 +1558,8 @@ textarea {
   .summary-positioning h3 {
     margin-left: 5rem;
   }
-  .summary-positioning .project-images-resize {
-    height: 300px;
+  img.project-images-resize {
+    height: 300px !important;
   }
   .details summary {
     margin-bottom: 2rem;

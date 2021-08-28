@@ -190,7 +190,7 @@ body {
 }
 
 .toggle-button-position button {
-  margin-top: 2rem;
+  margin-top: 2.5%;
 }
 
 .scrolls {
@@ -1517,7 +1517,7 @@ textarea {
   }
 }
 
-@media screen and (min-device-height: 1194px) and (min-device-width: 834px) {
+@media screen and (max-device-height: 1194px) and (max-device-width: 834px) {
   .side-navbar {
     width: 50%;
   }

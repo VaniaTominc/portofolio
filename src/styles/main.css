@@ -181,6 +181,7 @@ body {
 }
 
 .toggle-button-position {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

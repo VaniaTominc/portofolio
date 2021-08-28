@@ -1790,9 +1790,6 @@ textarea {
 }
 
 @media only screen and (max-width: 414px) {
-  .homepage-container {
-    height: 180vh;
-  }
   nav {
     margin-right: .7rem;
   }

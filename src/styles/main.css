@@ -1552,8 +1552,14 @@ textarea {
   .project-details-width {
     margin-left: -2.3rem;
   }
-  .project-icon {
-    margin-right: 6rem;
+  .summary-positioning .project-icon-container {
+    margin-right: 3rem;
+  }
+  .summary-positioning h3 {
+    margin-left: 3rem;
+  }
+  .details summary::after {
+    margin-top: 2rem;
   }
   .contacts {
     margin-top: -5rem;

@@ -293,7 +293,6 @@ nav a h2:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 3rem;
 }
 
 .bottom-navbar {
@@ -310,7 +309,7 @@ nav a h2:hover {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 4rem;
-  padding-right: 5rem;
+  padding-bottom: 2rem;
 }
 
 .navbar-contacts-directions {
@@ -1378,6 +1377,9 @@ textarea {
 }
 
 @media only screen and (max-width: 1024px) {
+  .overlay {
+    opacity: 1;
+  }
   .disabled {
     pointer-events: none;
   }

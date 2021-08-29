@@ -234,8 +234,12 @@ body {
   }
 }
 
+.outside-buttons {
+  min-height: 3vh;
+}
+
 .homepage-container {
-  min-height: 100vh;
+  min-height: 90vh;
   font-family: "didot";
 }
 
@@ -257,7 +261,7 @@ nav a {
     color: black;
     transition: 0.2s;
     position: relative;
-    // display: inline-block;
+    display: inline-block;
 }
 
 nav:hover a h2 {
@@ -303,7 +307,7 @@ nav a h2:hover {
 
 .my-introduction-heading {
 
-  // margin-top: 18rem;
+  margin-top: 18rem;
   .tominc-media-query {
     display: flex;
   }

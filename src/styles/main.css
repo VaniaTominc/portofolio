@@ -242,8 +242,12 @@ body {
   content: '';
 }
 
+.outside-buttons {
+  min-height: 3vh;
+}
+
 .homepage-container {
-  min-height: 100vh;
+  min-height: 90vh;
   font-family: "didot";
 }
 
@@ -259,6 +263,7 @@ nav a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
+  display: inline-block;
 }
 
 nav:hover a h2 {
@@ -307,6 +312,10 @@ nav a h2:hover {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
+}
+
+.my-introduction-heading {
+  margin-top: 18rem;
 }
 
 .my-introduction-heading .tominc-media-query {

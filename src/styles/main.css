@@ -247,11 +247,6 @@ body {
   font-family: "didot";
 }
 
-header {
-  min-height: 100vh;
-  position: relative;
-}
-
 .putting-margin-to-home-page {
   padding: 2rem;
 }

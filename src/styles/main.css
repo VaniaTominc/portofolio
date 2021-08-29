@@ -190,7 +190,7 @@ body {
 }
 
 .toggle-button-position button {
-  margin-top: 2.5vh;
+  margin-top: 7vh;
 }
 
 .scrolls {
@@ -243,11 +243,11 @@ body {
 }
 
 .outside-buttons {
-  min-height: 3vh;
+  min-height: 2vh;
 }
 
 .homepage-container {
-  min-height: 90vh;
+  min-height: 98vh;
   font-family: "didot";
 }
 

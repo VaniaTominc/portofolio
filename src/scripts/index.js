@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 const scrollingTop = document.querySelector('.home-button')
 
 scrollingTop.addEventListener('click', () => {
-  // console.log('clicked')
+  console.log('clicked')
   window.scrollTo({
     top: 0,
     behavior: 'smooth'

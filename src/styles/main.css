@@ -309,10 +309,6 @@ nav a h2:hover {
           writing-mode: vertical-lr;
 }
 
-.my-introduction-heading {
-  margin-top: 18rem;
-}
-
 .my-introduction-heading .tominc-media-query {
   display: -webkit-box;
   display: -ms-flexbox;

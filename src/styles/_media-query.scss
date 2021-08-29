@@ -931,192 +931,194 @@
 
 
 // ! max-width: 414px - iPhone 6/7/8 Plus
-@media only screen and (max-width: 414px) {
+
+@media screen and (max-device-height: 736px){
+  @media screen and (max-device-width: 414px){
 
 
-  // ? Landing page
+    // ? Landing page
 
-  nav {
-    margin-right: .7rem;
-  }
-
-  .top-navbar, .bottom-navbar {
-    margin-top: .5rem;
-  }
-
-  .top-navbar a h2, .bottom-navbar a h2 {
-    font-size: 4rem;
-    line-height: 1;
-  }
-
-  .putting-margin-to-home-page {
-    width: 135%;
-  }
-
-  .my-introduction-heading {
-    margin-left: .5rem;
-    margin-top: 30rem;
-    h1 {
-      font-size: 10.5rem;
+    nav {
+      margin-right: .7rem;
     }
-    h2 {
-      font-size: 6rem;
-      margin-left: 1rem;
+
+    .top-navbar, .bottom-navbar {
+      margin-top: .5rem;
     }
-  }
 
-  // ? About page
-
-  .about {
-    margin-top: 8rem;
-  }
-
-  .projects-main-heading {
-    font-size: 20rem;
-    margin-top: 10rem;
-    opacity: .1 !important;
-    z-index: 1;
-    margin-left: 5rem !important;
-    color: rgba(0, 0, 0, .5);
-  }
-
-  .about-container-media-query {
-    margin-left: -5rem;
-  }
-
-  .about-paragraph {
-    p {
-      font-size: 2rem;
-      margin-right: -5rem;
+    .top-navbar a h2, .bottom-navbar a h2 {
+      font-size: 4rem;
+      line-height: 1;
     }
-  }
 
-  .text {
-    font-size: 1.5rem;
-  }
-
-  .overlay {
-    margin-top: 7rem;
-    margin-left: .4rem;
-  }
-
-  .positioning-brand-statement-paragraph {
-    margin-left: -32.5rem;
-  }
-
-  .skills-positioning-container {
-    width: 100%;
-    margin-left: 4.5rem;
-
-    h3 {
-      font-size: 2.8rem;
+    .putting-margin-to-home-page {
+      width: 135%;
     }
-    h4 {
-      font-size: 2.3rem;
+
+    .my-introduction-heading {
+      margin-left: .5rem;
+      margin-top: 30rem;
+      h1 {
+        font-size: 10.5rem;
+      }
+      h2 {
+        font-size: 6rem;
+        margin-left: 1rem;
+      }
     }
-  }
 
-  .skills-icons {
-    width: 80px;
-    padding: .5rem;
-  }
+    // ? About page
 
-  .skills-icons-positioning {
-    width: 115%;
-  }
-
-  // ? Experience page
-
-  .experiences {
-    display: flex;
-    .experiences-media-query-phone {
-      margin-right: -50rem;
-      width: 175%;
+    .about {
+      margin-top: 8rem;
     }
-  }
 
-  .experiences-main-heading {
-    font-size: 20rem;
-    transform: rotate(180deg);
-    writing-mode: vertical-lr;
-    text-align: center;
-    opacity: .1 !important;
-    margin-left: -5.2rem;
-    margin-right: -19.8rem;
-    z-index: 1;
-    color: rgba(0, 0, 0, .5);
-  }
-
-  .experiences-description {
-    h3 {
-      font-size: 2.6rem;
+    .projects-main-heading {
+      font-size: 20rem;
+      margin-top: 10rem;
+      opacity: .1 !important;
+      z-index: 1;
+      margin-left: 5rem !important;
+      color: rgba(0, 0, 0, .5);
     }
-    h5 {
-      font-size: 1.9rem;
+
+    .about-container-media-query {
+      margin-left: -5rem;
     }
-    li {
-      font-size: 2rem;
-      margin-left: -.8rem;
+
+    .about-paragraph {
+      p {
+        font-size: 2rem;
+        margin-right: -5rem;
+      }
     }
-    ul li{
-      padding-left: 1em;
-      position: relative; 
-    }
-  
-    ul li:before {
-      content: '-';
-      position: absolute;
-      left: 0;
-  }
-  }
 
-  // ? Projects page
-
-  .projects {
-    width: 210%;
-  }
-
-  .project-details-width {
-    margin-left: -1.5rem;
-  }
-
-  .project-images-resize {
-    width: 680px;
-  }
-
-  .accordion-text-paragraph {
-    font-size: 2rem;
-  }
-
-  // ? Contact page
-
-  .contacts {
-    margin-bottom: 15rem;
-  }
-
-  .contact-main-heading {
-    margin-left: -5rem;
-    font-size: 12rem;
-    color: rgba(0, 0, 0, .5);
-    opacity: .1;
-  }
-
-  .positioning-contact-details {
-    p {
-      font-size: 2rem;
-    }
-    margin-left: -4rem;
-  }
-
-  // ? Footer
-  .footer {
-    width: 200%;
-    margin-left: -1rem;
-    p {
+    .text {
       font-size: 1.5rem;
     }
-  }
 
+    .overlay {
+      margin-top: 7rem;
+      margin-left: .4rem;
+    }
+
+    .positioning-brand-statement-paragraph {
+      margin-left: -32.5rem;
+    }
+
+    .skills-positioning-container {
+      width: 100%;
+      margin-left: 4.5rem;
+
+      h3 {
+        font-size: 2.8rem;
+      }
+      h4 {
+        font-size: 2.3rem;
+      }
+    }
+
+    .skills-icons {
+      width: 80px;
+      padding: .5rem;
+    }
+
+    .skills-icons-positioning {
+      width: 115%;
+    }
+
+    // ? Experience page
+
+    .experiences {
+      display: flex;
+      .experiences-media-query-phone {
+        margin-right: -50rem;
+        width: 175%;
+      }
+    }
+
+    .experiences-main-heading {
+      font-size: 20rem;
+      transform: rotate(180deg);
+      writing-mode: vertical-lr;
+      text-align: center;
+      opacity: .1 !important;
+      margin-left: -5.2rem;
+      margin-right: -19.8rem;
+      z-index: 1;
+      color: rgba(0, 0, 0, .5);
+    }
+
+    .experiences-description {
+      h3 {
+        font-size: 2.6rem;
+      }
+      h5 {
+        font-size: 1.9rem;
+      }
+      li {
+        font-size: 2rem;
+        margin-left: -.8rem;
+      }
+      ul li{
+        padding-left: 1em;
+        position: relative; 
+      }
+    
+      ul li:before {
+        content: '-';
+        position: absolute;
+        left: 0;
+    }
+    }
+
+    // ? Projects page
+
+    .projects {
+      width: 210%;
+    }
+
+    .project-details-width {
+      margin-left: -1.5rem;
+    }
+
+    .project-images-resize {
+      width: 680px;
+    }
+
+    .accordion-text-paragraph {
+      font-size: 2rem;
+    }
+
+    // ? Contact page
+
+    .contacts {
+      margin-bottom: 15rem;
+    }
+
+    .contact-main-heading {
+      margin-left: -5rem;
+      font-size: 12rem;
+      color: rgba(0, 0, 0, .5);
+      opacity: .1;
+    }
+
+    .positioning-contact-details {
+      p {
+        font-size: 2rem;
+      }
+      margin-left: -4rem;
+    }
+
+    // ? Footer
+    .footer {
+      width: 200%;
+      margin-left: -1rem;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 

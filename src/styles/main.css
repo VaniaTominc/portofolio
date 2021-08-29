@@ -222,7 +222,7 @@ body {
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-right: .8rem;
+  margin-right: 2.5rem;
 }
 
 .scrolls .center {
@@ -249,6 +249,11 @@ body {
 .homepage-container {
   min-height: 98vh;
   font-family: "didot";
+}
+
+header {
+  min-height: 100vh;
+  position: relative;
 }
 
 .putting-margin-to-home-page {
@@ -281,13 +286,14 @@ nav a h2:hover {
 }
 
 .top-navbar {
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 3rem;
 }
 
 .bottom-navbar {
@@ -304,6 +310,7 @@ nav a h2:hover {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 4rem;
+  padding-right: 5rem;
 }
 
 .navbar-contacts-directions {
@@ -1566,7 +1573,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media screen and (max-device-height: 736px) and (max-device-width: 414px) {
   nav {
     margin-right: .7rem;
   }

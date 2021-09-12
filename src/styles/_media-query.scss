@@ -7,83 +7,58 @@
     padding: 0;
   }
 
-  .nav-icon {
-    width: 50px;
-    // height: 50px;
+  #hamburger {
     position: fixed;
-    margin-top: 2rem;
-    // margin-bottom: 50px;
+    top: 2rem;
     right: 2rem;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
     z-index: 999999;
   }
-
-  .nav-icon span {
-    display: block;
-    position: absolute;
+  .hamburger-icon {
+    width: 50px;
     height: 9px;
-    width: 100%;
     background: rgb(144, 0, 0);
     border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 9px;
+    background: rgb(144, 0, 0);
+    border-radius: 9px;
+    transition: all .5s ease-in-out;
+    z-index: 9999999;
+  }
+  .hamburger-icon::before {
+    transform: translateY(-16px);
+  }
+  .hamburger-icon::after {
+    transform: translateY(16px);
   }
 
-  .nav-icon span:nth-child(1) {
-    top: 0px;
+  #hamburger.active .hamburger-icon {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  #hamburger.active .hamburger-icon::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  #hamburger.active .hamburger-icon::after {
+    transform: rotate(-45deg) translate(35px, 35px);
   }
 
-  .nav-icon span:nth-child(2), .nav-icon span:nth-child(3) {
-    top: 18px;
-  }
 
-  .nav-icon span:nth-child(4) {
-    top: 36px;
-  }
-
-  .nav-icon.active span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-
-  .nav-icon.active span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .nav-icon.active span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .nav-icon.active span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-
-  .side-navbar {
+  #side-navbar {
     position: fixed;
     top: 0;
     right: -100%;
@@ -124,7 +99,7 @@
     }
   }
 
-  .side-navbar.active {
+  #side-navbar.active {
     right: 0;
   }
 
@@ -136,7 +111,7 @@
   }
 
   .darkmode {
-    .side-navbar {
+    #side-navbar {
       background: antiquewhite;
     }
     .top-navbar, .bottom-navbar {
@@ -338,6 +313,10 @@
 // ! max-width: 1024px - iPad Pro 12
 @media only screen and (max-width: 1024px) {
 
+  .scrolls {
+    right: -1rem;
+  }
+
   .overlay {
     opacity: 1;
   }
@@ -352,6 +331,12 @@
 
   .projects-media-query-hover {
     margin-left: 2.9rem;
+  }
+
+  .toggle-button-position {
+    button {
+      margin-top: 3.5vh;
+    }
   }
 
   // ? Landing page
@@ -546,21 +531,15 @@
 @media screen and (max-device-height: 1194px)  {
   @media screen and (max-device-width: 834px) {
 
-    // ? Side navbar
-
-    .side-navbar {
-      width: 50%;
+    .scrolls {
+      right: -.5rem;
     }
 
-    // .toggle-button-position {
-    //   button {
-    //     margin-top: -24rem;
-    //   }
-    // }
+    // ? Side navbar
 
-    // .nav-icon {
-    //   margin-top: -24rem;
-    // }
+    #side-navbar {
+      width: 50%;
+    }
 
     // ? About section
 
@@ -634,304 +613,60 @@
   } 
 }
 
+// ! max-width: 834px (height 1112px) - iPad Pro 10.5'
 
-// // ! max-width: 800px - iPad
-// @media only screen and (max-width: 800px) {
+@media screen and (max-height: 1112px){
+  @media screen and (max-width: 834px) {
 
-//   // ? Landing page
+    // ? Side navbar
 
-//   .homepage-container {
-//     width: 122%;
-//     h2 {
-//       margin-right: -3rem;
-//     }
-//   }
+    #side-navbar {
+      width: 50%;
+    }
 
-//   header {
-//     min-height: 127vh;
-//   }
+    // ? About section
 
-//   // About page
+    .about {
+      margin-top: -38rem;
+    }
 
-//   .about {
-//     width: 122%;
-//   }
+    .positioning-about-main-heading {
+      width: 350px;
+    }
 
-//   .my-photo-positioning {
-//     margin-left: 4.5rem;
-//   }
+    .positioning-brand-statement-paragraph {
+      width: 650px;
+      margin-left: -22rem;
+    }
 
-//   .skills-icons {
-//     width: 80%;
-//   }
+    .my-photo {
+      width: 250px;
+    }
 
-//   .overlay {
-//     height: 20%;
-//     margin-left: .1rem;
-//   }
+    .my-photo-positioning {
+      margin-left: 1rem;
+    }
+  }
 
-//   // ? Experience page
+  // ? Experience 
 
-//   .experiences-main-heading {
-//     margin-left: 1.5rem;
-//   }
+  .experiences {
+    display: flex;
+    align-items: center;
+  }
 
-//   .contact-main-heading {
-//     margin-left: 5rem;
-//   }
-
-
-
-//   // ? Projects page
-
-//   .projects {
-//     width: 115%;
-//   }
-
-//   // ? Contact page
-
-//   .contact-header {
-//     margin-left: -6rem;
-//   }
+  .experiences-main-heading {
+    overflow-wrap: normal;
+    font-size: 14rem;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+  }
+} 
 
 
-//   // ? Footer
-//   .footer {
-//     width: 125%;
-//   }
-
-// }
 
 
-// // ! max-width: 540px - Surface Duo
-// @media only screen and (max-width: 540px) {
 
-//   // ? Landing page
-
-//   .my-introduction-heading {
-  
-//     margin-top: 15rem;
-//     .tominc-media-query {
-//       flex-direction: column;
-//     }
-//     .space-unicode {
-//       display: none;
-//     }
-//     h1 {
-//       font-size: 10rem;
-//     }
-//     h2 {
-//       font-size: 5rem;
-//       margin-top: 3rem;
-//       line-height: .8;
-//       margin-left: 2rem;
-//     }
-//   }
-
-//   .scrolls {
-//     display: none;
-//   }
-
-//   .homepage-container {
-//     width: 140%;
-//     height: 150vh;
-//   }
-
-//   .putting-margin-to-home-page {
-//     width: 105%;
-//   }
-
-//   .bottom-navbar {
-//     position: relative;
-//     flex-direction: column;
-//     .navbar-contacts-directions {
-//       writing-mode: horizontal-tb;
-//     }
-//   }
-
-//   .top-navbar {
-//     flex-direction: column;
-//     align-items: flex-end;
-//   }
-
-//   nav:hover a h2 {
-//     pointer-events: none;
-//     margin-right: -10rem;
-//   }
-
-//   // ? About page
-
-//   .about {
-//     width: 150%;
-//     // flex-direction: column;
-//     .projects-main-heading {
-//       margin-left: -.8rem;
-//     }
-//   }
-
-//   .about:hover {
-//     margin-left: 1.9rem;
-//   }
-
-//   .about-container-media-query {
-//     margin-left: 1.2rem;
-//   }
-
-//   .positioning-about-main-heading {
-//     margin-top: 10rem;
-//     width: 500px;
-//     margin-left: -2rem;
-//     margin-right: 1.8rem;
-//     font-size: 2.2rem;
-//   }
-
-//   .about-paragraph p {
-//     font-size: 1.7rem;
-//     line-height: 1.5;
-//   }
-
-//   .my-photo-positioning {
-//     margin-left: -10rem;
-//     margin-top: 24rem;
-//   }
-
-//   .positioning-brand-statement-paragraph {
-//     margin-left: -33rem;
-//     margin-right: -2rem;
-//     margin-top: 2rem;
-//   }
-
-//   .skills-positioning-container {
-//     h3 {
-//       font-size: 2.5rem;
-//     }
-//     h4 {
-//       font-size: 2rem;
-//     }
-//   }
-
-//   .skills-icons-positioning {
-//     margin-bottom: 3rem;
-//     margin-left: -.5rem;
-//     padding-bottom: 1rem;
-//     width: 106%;
-//     .container {
-//       padding-bottom: 1rem;
-//     }
-//   }
-
-//   .skills-icons {
-//     width: 80%;
-//   }
-
-//   .overlay {
-//     opacity: 1;
-//     height: 20%;
-//     margin-left: .1rem;
-//     margin-top: 5rem;
-//   }
-
-//   // ? Experience page
-
-//   .experiences {
-//     margin-top: 14rem;
-//   }
-
-//   .experiences-main-heading {
-//     margin-top: 10rem;
-//     font-size: 6rem;
-//     margin-left: 0;
-//   }
-
-//   .experiences-education-wannabe-table {
-//     width: 130%;
-//     margin-left: 3.4rem;
-//     margin-top: 1rem;
-//   }
-
-//   .projects-main-container {
-//     width: 95%;
-//   }
-
-//   .experiences-description { 
-//     margin-bottom: .5rem;
-//     h3 {
-//       font-size: 1.9rem;
-//     }
-//     h5 {
-//       padding-top: .5rem;
-//       font-size: 1.5rem;
-//     }
-//     li {
-//     font-size: 1.7rem;
-//     line-height: 1.5;
-//     }
-//   }
-
-//   // ? Projects page
-
-//   .projects {
-//     margin-top: 16rem;
-//     width: 160%;
-//   }
-
-//   .projects-main-heading {
-//     font-size: 6rem;
-//     line-height: 0;
-//     margin-left: -.8rem;
-//     margin-bottom: 8rem;
-//     transition: 1s;
-//   }
-
-//   .project-details-width {
-//     margin-left: 5rem;
-//   }
-
-//   .summary-positioning {
-//     .project-icon {
-//       width: 100px;
-//     }
-//     h3 {
-//       font-size: 2.2rem;
-//       margin-left: 1rem;
-//     }
-//   }
-
-//   .accordion-text-paragraph {
-//     font-size: 1.7rem;
-//     line-height: 1.5;
-//     // width: 200%;
-//   }
-
-//   .tools-icons-size {
-//     width: 60px;
-//     height: 60px;
-//     margin: .5rem;
-//   }
-
-//   // ? Contact page
-
-//   .contacts {
-//     margin: 10rem 0;
-//   }
-
-//   .contact-main-heading {
-//     font-size: 6rem;
-//     margin-left: 8rem;
-//   }
-
-//   .positioning-contact-details {
-//     p {
-//       font-size: 1.7rem;
-//     }
-//   }
-
-//   // ? Footer
-//   .footer {
-//     width: 150%;
-//   }
-
-// }
 
 
 // ! max-width: 414px - iPhone 6/7/8 Plus
@@ -1132,7 +867,7 @@
 
   // ? Landing page
 
-  .nav-icon {
+  #nav-icon {
     margin-right: 2rem;
   }
 

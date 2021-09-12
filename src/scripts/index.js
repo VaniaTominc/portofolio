@@ -60,19 +60,28 @@ window.addEventListener('scroll', () => {
 const scrollingTop = document.querySelector('.home-button')
 
 scrollingTop.addEventListener('click', () => {
-  console.log('clicked')
+  // console.log('clicked')
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   })
 })
 
-// ! hamburger navbar
-const hamburger = document.querySelector('.nav-icon')
-const sidebar = document.querySelector('.side-navbar')
+// ! New hamburger
+
+const hamburger = document.getElementById('hamburger')
+const sidebar = document.getElementById('side-navbar')
+
+document.addEventListener('click', (event) => {
+  if (event.target.id !== 'sidebar' && event.target.id !== 'hamburger') {
+    hamburger.classList.remove('active')
+    sidebar.classList.remove('active')
+  }
+})
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active')
   sidebar.classList.toggle('active')
-  // console.log('burger clicked')
+  // console.log('I am clicked')
 })
+

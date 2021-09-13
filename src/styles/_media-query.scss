@@ -346,9 +346,6 @@
     .tominc-media-query {
       flex-direction: column;
     }
-    .space-unicode {
-      display: none;
-    }
     h1 {
       font-size: 11rem;
       margin-top: -3rem;
@@ -366,7 +363,7 @@
   // ? About page
 
   .about {
-    margin-top: -50rem;
+    margin-top: -30rem;
   }
 
   .about-main-heading {
@@ -382,30 +379,43 @@
     width: 650px;
   }
 
+
   .my-photo-positioning {
-    margin-left: 4rem;
+    margin-left: -3rem;
+    margin-top: 25rem;
   }
 
 
   // ? Experience page
 
-  .experiences-left-side {
-    width: 100%;
-  }
 
-  .experiences-right-side {
+  .experiences-media-hiding-icon > .experiences-right-side {
     display: none;
   }
 
   .experiences {
     margin-bottom: 16rem;
+    .experiences-left-side {
+      width: 100%;
+    }
   }
 
-  .experiences-main-heading {
-    margin-left: -.2rem;
-    word-break: break-all;
-    line-height: .78;
-  }
+  // .experiences-main-heading {
+  //   margin-left: -1rem;
+  //   word-break: break-all;
+  // }
+
+  // .experiences {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  // .experiences-main-heading {
+  //   word-break: normal;
+  //   // font-size: 14rem;
+  //   transform: rotate(180deg);
+  //   writing-mode: vertical-lr;
+  // }
 
 
   // ? Projects page
@@ -441,8 +451,13 @@
 
   .contact-main-heading {
     overflow: hidden;
-    line-height: .8;
     margin-left: -3rem;
+  }
+
+  // ? Side navbar
+
+  #side-navbar {
+    width: 100%;
   }
 
 }
@@ -524,7 +539,7 @@
     // ? Side navbar
 
     #side-navbar {
-      width: 50%;
+      width: 100%;
     }
 
     // ? About section
@@ -604,17 +619,7 @@
 @media only screen and (min-height: 1112px)  {
   @media only screen and (max-width: 834px) {
 
-    // ? Side navbar
-
-    #side-navbar {
-      width: 100% !important;
-    }
-
     // ? About section
-
-    .about {
-      margin-top: -38rem;
-    }
 
     .positioning-about-main-heading {
       width: 350px;
@@ -636,17 +641,17 @@
 
   // ? Experience 
 
-  .experiences {
-    display: flex;
-    align-items: center;
-  }
+  // .experiences {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
-  .experiences-main-heading {
-    word-break: normal;
-    // font-size: 14rem;
-    transform: rotate(180deg);
-    writing-mode: vertical-lr;
-  }
+  // .experiences-main-heading {
+  //   word-break: normal;
+  //   // font-size: 14rem;
+  //   transform: rotate(180deg);
+  //   writing-mode: vertical-lr;
+  // }
 } 
 
 

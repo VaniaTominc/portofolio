@@ -162,6 +162,10 @@
   background-size: 300px;
 }
 
+.darkmode .fill-svg {
+  fill: antiquewhite;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -368,14 +372,8 @@ nav a h2:hover {
   transition: 1s;
 }
 
-.about:hover {
-  margin-left: 2.9rem;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
 .about-main-heading {
-  font-size: 8rem;
+  font-size: 13rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
   -webkit-transform: rotate(180deg);
@@ -384,13 +382,13 @@ nav a h2:hover {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   text-align: center;
-  line-height: .2;
   font-family: "didot";
   -webkit-transition: .4s;
   transition: .4s;
   opacity: .4;
   -webkit-animation: open 4s ease-in-out;
           animation: open 4s ease-in-out;
+  margin-left: -2.9rem;
 }
 
 .about-main-container {
@@ -538,7 +536,7 @@ nav a h2:hover {
 }
 
 .projects-main-heading {
-  font-size: 8rem;
+  font-size: 13rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
   -webkit-transform: rotate(180deg);
@@ -547,19 +545,13 @@ nav a h2:hover {
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   text-align: center;
-  line-height: .2;
   font-family: "didot";
   -webkit-transition: .4s;
   transition: .4s;
   opacity: .4;
   -webkit-animation: open 4s ease-in-out;
           animation: open 4s ease-in-out;
-}
-
-.projects:hover {
-  margin-left: 2.9rem;
-  -webkit-transition: 1s;
-  transition: 1s;
+  margin-left: -2.9rem;
 }
 
 .changing-according-profile {
@@ -813,12 +805,21 @@ details p {
 }
 
 .experiences-education-wannabe-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 80%;
   min-height: 500px;
   margin: 4rem auto;
+}
+
+.experiences-media-left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .experiences-left-side {
@@ -878,27 +879,13 @@ details p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
 }
 
-.experiences-right-side .work-experiences-icons {
+.experiences-right-side svg.work-experiences-icons {
   width: 300px;
   height: 300px;
-  background: url("../images/SVGIcons/work.svg");
-  background-size: 300px;
-  opacity: 0;
-  -webkit-transition: 4s;
-  transition: 4s;
-}
-
-.experiences-right-side:hover .work-experiences-icons,
-.experiences-right-side:active .work-experiences-icons {
-  opacity: .5;
-  -webkit-animation: open 4s ease-in-out;
-          animation: open 4s ease-in-out;
+  opacity: .4;
 }
 
 .experience-sign {
@@ -1310,7 +1297,7 @@ textarea {
     margin-top: 10rem;
     opacity: .05 !important;
     z-index: -1;
-    margin-left: 1.5rem !important;
+    margin-left: -3.2rem;
     color: rgba(0, 0, 0, 0.5);
   }
   .experiences {
@@ -1336,9 +1323,9 @@ textarea {
   }
   .projects-main-heading {
     font-size: 13rem;
-    line-height: .35;
     opacity: .05;
     z-index: -1;
+    margin-left: -3.1rem;
   }
   .project-details-width {
     width: 80%;
@@ -1391,12 +1378,6 @@ textarea {
   .overlay {
     opacity: 1;
   }
-  .disabled {
-    pointer-events: none;
-  }
-  .projects-media-query-hover {
-    margin-left: 2.9rem;
-  }
   .toggle-button-position button {
     margin-top: 3.5vh;
   }
@@ -1424,8 +1405,8 @@ textarea {
   .about {
     margin-top: -30rem;
   }
-  .about-main-heading {
-    margin-left: 3.8rem !important;
+  .about-main-container {
+    margin-left: -12rem;
   }
   .positioning-about-main-heading {
     margin-left: -1rem;
@@ -1438,15 +1419,6 @@ textarea {
     margin-left: -3rem;
     margin-top: 25rem;
   }
-  .experiences-media-hiding-icon > .experiences-right-side {
-    display: none;
-  }
-  .experiences {
-    margin-bottom: 16rem;
-  }
-  .experiences .experiences-left-side {
-    width: 100%;
-  }
   .experiences {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1454,6 +1426,11 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 16rem;
+  }
+  .experiences .experiences-left-side {
+    width: 108%;
+    margin-left: -8rem;
   }
   .experiences-main-heading {
     word-break: normal;
@@ -1464,8 +1441,14 @@ textarea {
             writing-mode: vertical-lr;
     margin-left: -1rem;
   }
+  svg.work-experiences-icons {
+    display: none;
+  }
   .projects {
     margin-bottom: 18rem;
+  }
+  #projects.projects-main-heading {
+    margin-left: -3.4rem;
   }
   .accordion-text {
     -webkit-box-orient: vertical;
@@ -1491,14 +1474,35 @@ textarea {
   }
   .project-details-width {
     margin-bottom: 1rem;
-    margin-left: -.8rem;
+    margin-left: -8rem;
+    width: 75%;
+  }
+  .contacts {
+    margin-left: 1.8rem;
+  }
+  .container-contact {
+    margin-left: -8rem;
+    width: 600px;
   }
   .contact-main-heading {
-    overflow: hidden;
-    margin-left: -3rem;
+    word-break: normal;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+  }
+  .positioning-contact-form-media-query {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #side-navbar {
     width: 100%;
+  }
+  .footer {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1567,6 +1571,181 @@ textarea {
   }
   .my-photo-positioning {
     margin-left: 1rem;
+  }
+}
+
+@media only screen and (width: 800px) {
+  #side-navbar {
+    width: 100%;
+  }
+  .my-introduction-heading h1 {
+    font-size: 10rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 4.3rem;
+  }
+  .my-photo-positioning {
+    margin-left: -4rem;
+    margin-top: 26rem;
+  }
+  .positioning-brand-statement-paragraph {
+    width: 600px;
+  }
+  img.my-photo {
+    width: 300px;
+  }
+  .experiences {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .experiences h2.experiences-main-heading {
+    margin-left: -.5rem;
+    word-break: normal;
+    font-size: 14rem;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+  }
+  .experiences .experiences-left-side {
+    width: 109%;
+    margin-left: -9.3rem;
+  }
+  .container-contact {
+    width: 600px;
+  }
+  .footer {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (min-height: 1024px) and (max-width: 768px) {
+  .toggle-button-position button {
+    margin-top: 6vh;
+  }
+  .my-introduction-heading h1 {
+    font-size: 10rem;
+  }
+  p.positioning-brand-statement-paragraph {
+    width: 600px;
+  }
+  img.my-photo-positioning {
+    margin-top: 26rem;
+    margin-left: -7rem;
+  }
+  .experiences {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .experiences h2.experiences-main-heading {
+    margin-left: -.7rem;
+    word-break: normal;
+    font-size: 13rem;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+  }
+  .experiences .experiences-left-side {
+    width: 109%;
+    margin-left: -8.6rem;
+  }
+  .project-details-width {
+    margin-left: -8.4rem;
+  }
+  .contacts-media-query-smaller-devices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-media-query-smaller-devices .contact-main-heading {
+    word-break: normal;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    margin-left: -.1rem;
+  }
+  .container-contact {
+    width: 600px;
+    margin-left: -8.4rem;
+  }
+  .footer {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .my-introduction-heading h1 {
+    font-size: 7rem;
+  }
+  .my-introduction-heading h2 {
+    font-size: 3.5rem;
+  }
+  .about {
+    margin-top: -33rem;
+  }
+  .my-photo-positioning {
+    margin-left: -13rem;
+    margin-top: 29rem;
+  }
+  .positioning-brand-statement-paragraph {
+    margin-top: 2rem;
+    width: 450px;
+  }
+  .my-photo {
+    width: 250px;
+  }
+  .experiences {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .experiences .experiences-left-side {
+    width: 125%;
+    margin-left: -8.6rem;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .container {
+    margin: .5rem;
+  }
+  .skills-positioning-container {
+    width: 85%;
+  }
+  .project-details-width {
+    margin-left: -3.3rem;
+  }
+  .project-details-width .project-images-resize {
+    width: 450px;
+  }
+  .container-contact {
+    width: 600px;
+    margin-left: -5.3rem;
+  }
+  .footer {
+    margin-top: 7rem;
   }
 }
 

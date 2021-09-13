@@ -7,23 +7,24 @@
 }
 
 .projects-main-heading {
-  font-size: 8rem;
+  font-size: 13rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   text-align: center;
-  line-height: .2;
+  // line-height: .2;
   font-family: "didot";
   transition: .4s;
   opacity: .4;
   animation: open 4s ease-in-out;
+  margin-left: -2.9rem;
 }
 
-.projects:hover {
-  margin-left: 2.9rem;
-  transition: 1s;
-}
+// .projects:hover {
+//   margin-left: 2.9rem;
+//   transition: 1s;
+// }
 
 .changing-according-profile {
   padding-top: 20px;

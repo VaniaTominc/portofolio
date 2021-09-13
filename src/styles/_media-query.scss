@@ -400,22 +400,19 @@
     }
   }
 
-  // .experiences-main-heading {
-  //   margin-left: -1rem;
-  //   word-break: break-all;
-  // }
 
-  // .experiences {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  .experiences {
+    display: flex;
+    align-items: center;
+  }
 
-  // .experiences-main-heading {
-  //   word-break: normal;
-  //   // font-size: 14rem;
-  //   transform: rotate(180deg);
-  //   writing-mode: vertical-lr;
-  // }
+  .experiences-main-heading {
+    word-break: normal;
+    // font-size: 14rem;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    margin-left: -1rem;
+  }
 
 
   // ? Projects page

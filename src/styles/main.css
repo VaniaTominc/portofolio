@@ -1435,6 +1435,7 @@ textarea {
   }
   .positioning-brand-statement-paragraph {
     margin-left: -25rem;
+    width: 650px;
   }
   .my-photo-positioning {
     margin-left: 4rem;
@@ -1486,57 +1487,6 @@ textarea {
     overflow: hidden;
     line-height: .8;
     margin-left: -3rem;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .positioning-about-main-heading {
-    margin-left: -1rem;
-  }
-  .my-photo-positioning {
-    margin-left: 4rem;
-  }
-  .positioning-brand-statement-paragraph {
-    margin-top: 4rem;
-    margin-left: -25rem;
-  }
-  .about-main-container {
-    margin-left: -6rem;
-  }
-  .about-main-heading {
-    font-size: 14rem;
-    margin-top: 10rem;
-    opacity: .05 !important;
-    z-index: -1;
-    margin-left: 4.2rem !important;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  .experiences {
-    margin-top: 13rem;
-  }
-  .skills-positioning-container {
-    width: 80%;
-    margin-left: -2rem;
-  }
-  .container {
-    margin: .6rem;
-  }
-  .projects-main-heading {
-    font-size: 13rem;
-    line-height: .35;
-    opacity: .05;
-    z-index: -1;
-  }
-  .project-details-width {
-    width: 80%;
-    margin-left: -3rem;
-  }
-  .contact-main-heading {
-    font-size: 13rem;
-    opacity: .05;
-    margin-left: -5rem;
-    overflow: hidden;
-    z-index: -1;
   }
 }
 

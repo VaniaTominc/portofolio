@@ -9,10 +9,14 @@
 /* ! Experiences & Education */
 .experiences {
   min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .experiences-main-heading, .contact-main-heading {
   font-size: 8rem;
+  // writing-mode: initial !important;
+  // transform: rotate(360deg) !important;
   letter-spacing: .3rem;
   text-transform: uppercase;
   text-align: center;

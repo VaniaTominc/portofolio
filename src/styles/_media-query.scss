@@ -48,7 +48,6 @@
   #hamburger.active .hamburger-icon {
     transform: translateX(-50px);
     background: transparent;
-    box-shadow: none;
   }
   #hamburger.active .hamburger-icon::before {
     transform: rotate(45deg) translate(35px, -35px);
@@ -114,14 +113,14 @@
     #side-navbar {
       background: antiquewhite;
     }
-    .top-navbar, .bottom-navbar {
+    .top-navbar a, .bottom-navbar a {
       h2 {
-        color: black;
+        color: black !important;
       }
     }
     .about-main-heading, .experiences-main-heading, .projects-main-heading, .contact-main-heading  {
       color:antiquewhite;
-      opacity: .1 !important;
+      opacity: .2 !important;
     }
   }
 
@@ -403,7 +402,7 @@
 
   .experiences-main-heading {
     margin-left: -.2rem;
-    overflow-wrap: break-word;
+    word-break: break-all;
     line-height: .78;
   }
 
@@ -615,13 +614,13 @@
 
 // ! max-width: 834px (height 1112px) - iPad Pro 10.5'
 
-@media screen and (max-height: 1112px){
-  @media screen and (max-width: 834px) {
+@media only screen and (min-height: 1112px)  {
+  @media only screen and (max-width: 834px) {
 
     // ? Side navbar
 
     #side-navbar {
-      width: 50%;
+      width: 100% !important;
     }
 
     // ? About section
@@ -656,8 +655,8 @@
   }
 
   .experiences-main-heading {
-    overflow-wrap: normal;
-    font-size: 14rem;
+    word-break: normal;
+    // font-size: 14rem;
     transform: rotate(180deg);
     writing-mode: vertical-lr;
   }
@@ -671,8 +670,8 @@
 
 // ! max-width: 414px - iPhone 6/7/8 Plus
 
-@media screen and (max-device-height: 736px){
-  @media screen and (max-device-width: 414px){
+@media only screen and (max-device-height: 736px){
+  @media only screen and (max-device-width: 414px){
 
 
     // ? Landing page
@@ -778,8 +777,8 @@
 
     .experiences-main-heading {
       font-size: 20rem;
-      transform: rotate(180deg);
-      writing-mode: vertical-lr;
+      // transform: rotate(180deg);
+      // writing-mode: vertical-lr;
       text-align: center;
       opacity: .1 !important;
       margin-left: -5.2rem;

@@ -1161,8 +1161,6 @@ textarea {
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
     background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   #hamburger.active .hamburger-icon::before {
     -webkit-transform: rotate(45deg) translate(35px, -35px);
@@ -1246,12 +1244,12 @@ textarea {
   .darkmode #side-navbar {
     background: antiquewhite;
   }
-  .darkmode .top-navbar h2, .darkmode .bottom-navbar h2 {
-    color: black;
+  .darkmode .top-navbar a h2, .darkmode .bottom-navbar a h2 {
+    color: black !important;
   }
   .darkmode .about-main-heading, .darkmode .experiences-main-heading, .darkmode .projects-main-heading, .darkmode .contact-main-heading {
     color: antiquewhite;
-    opacity: .1 !important;
+    opacity: .2 !important;
   }
   .my-introduction-heading h1 {
     margin-left: 3rem;
@@ -1452,7 +1450,7 @@ textarea {
   }
   .experiences-main-heading {
     margin-left: -.2rem;
-    overflow-wrap: break-word;
+    word-break: break-all;
     line-height: .78;
   }
   .projects {
@@ -1594,9 +1592,9 @@ textarea {
   }
 }
 
-@media screen and (max-height: 1112px) and (max-width: 834px) {
+@media only screen and (min-height: 1112px) and (max-width: 834px) {
   #side-navbar {
-    width: 50%;
+    width: 100% !important;
   }
   .about {
     margin-top: -38rem;
@@ -1616,7 +1614,7 @@ textarea {
   }
 }
 
-@media screen and (max-height: 1112px) {
+@media only screen and (min-height: 1112px) {
   .experiences {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1626,8 +1624,7 @@ textarea {
             align-items: center;
   }
   .experiences-main-heading {
-    overflow-wrap: normal;
-    font-size: 14rem;
+    word-break: normal;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
     -webkit-writing-mode: vertical-lr;
@@ -1636,7 +1633,7 @@ textarea {
   }
 }
 
-@media screen and (max-device-height: 736px) and (max-device-width: 414px) {
+@media only screen and (max-device-height: 736px) and (max-device-width: 414px) {
   nav {
     margin-right: .7rem;
   }
@@ -1717,11 +1714,6 @@ textarea {
   }
   .experiences-main-heading {
     font-size: 20rem;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-            writing-mode: vertical-lr;
     text-align: center;
     opacity: .1 !important;
     margin-left: -5.2rem;

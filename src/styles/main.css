@@ -1838,6 +1838,7 @@ textarea {
   }
   .project-details-width .project-images-resize {
     width: 330px;
+    margin-left: -1.3rem;
   }
   .project-details-width .tools-icons-positioning {
     -ms-flex-wrap: wrap;
@@ -1854,7 +1855,7 @@ textarea {
     font-size: 1.3rem;
   }
   .project-details-width details summary {
-    width: 90%;
+    width: 93%;
   }
   .project-details-width details summary::after {
     font-size: 2rem;

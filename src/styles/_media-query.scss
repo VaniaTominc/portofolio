@@ -381,7 +381,7 @@
     margin-bottom: 16rem;
     .experiences-left-side {
       width: 108%;
-      margin-left: -8rem;
+      margin-left: -9.9rem;
     }
   }
 
@@ -389,7 +389,7 @@
     word-break: normal;
     transform: rotate(180deg);
     writing-mode: vertical-lr;
-    margin-left: -1rem;
+    margin-left: -1.9rem;
   }
 
   svg.work-experiences-icons {
@@ -686,7 +686,7 @@
       display: flex;
       align-items: center;
       h2.experiences-main-heading {
-        margin-left: -.7rem;
+        margin-left: -1.3rem;
       }
       .experiences-left-side {
         width: 109%;
@@ -731,6 +731,7 @@
 
 // ! max-width: 600px
 
+
 @media only screen and (max-width: 600px) {
 
   // ? Home section
@@ -769,12 +770,13 @@
   .experiences {
     display: flex;
     align-items: center;
-    h2.experiences-main-heading {
-      margin-left: .6rem;
+    .experiences-main-heading {
+      width: 100%;
+      margin-left: -15rem;
     }
     .experiences-left-side {
-      width: 125%;
-      margin-left: -8.6rem;
+      width: 130%;
+      margin-left: -12.4rem;
     }
   }
 
@@ -793,23 +795,30 @@
   // ? Projects
 
   .project-details-width {
-    margin-left: -3.3rem;
+    margin-left: -10.3rem;
+    width: 80%;
     .project-images-resize {
       width: 450px;
+    }
+    details summary::after {
+      margin-top: 0;
     }
   }
 
   // ? Contacts
 
   .container-contact {
-    width: 600px;
-    margin-left: -5.3rem;
+    width: 500px;
+    margin-left: -10.7rem;
   }
 
   // ? Footer
 
   .footer {
     margin-top: 7rem;
+    p {
+      text-align: center;
+    }
   }
 
 }
@@ -891,9 +900,12 @@
   // ? Experiences
 
   .experiences {
+    .experiences-main-heading {
+      margin-left: -.5rem;
+    }
     .experiences-left-side {
-      width: 170%;
-      margin-left: -11rem;
+      width: 225%;
+      margin-left: -13.2rem;
     }
     .experiences-description {
       h3 {
@@ -912,7 +924,9 @@
 
   .project-details-width {
     margin-left: -11rem;
-    width: 350px;
+    .changing-according-profile {
+      width: 107%;
+    }
     .project-images-resize {
       width: 330px;
     }
@@ -926,6 +940,17 @@
       top: -50%;
       margin-left: 20px;
     }
+    .summary-positioning {
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+    details summary {
+      width: 90%;
+    }
+    details summary::after {
+      font-size: 2rem;
+    }
   }
 
   // ? Contact section
@@ -933,7 +958,6 @@
   .container-contact {
     width: 350px;
     margin-left: -12rem;
-    background-color: rgba(250,235,215, .1);
 
     .name {
       float: initial;

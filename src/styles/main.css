@@ -166,6 +166,10 @@
   fill: antiquewhite;
 }
 
+.darkmode .container-contact {
+  background-color: rgba(250, 235, 215, 0.1);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -788,7 +792,7 @@ details p {
 }
 
 .experiences-main-heading, .contact-main-heading {
-  font-size: 8rem;
+  font-size: 13rem;
   letter-spacing: .3rem;
   text-transform: uppercase;
   text-align: center;
@@ -1429,7 +1433,7 @@ textarea {
   }
   .experiences .experiences-left-side {
     width: 108%;
-    margin-left: -8rem;
+    margin-left: -9.9rem;
   }
   .experiences-main-heading {
     word-break: normal;
@@ -1438,7 +1442,7 @@ textarea {
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
-    margin-left: -1rem;
+    margin-left: -1.9rem;
   }
   svg.work-experiences-icons {
     display: none;
@@ -1646,7 +1650,7 @@ textarea {
             align-items: center;
   }
   .experiences h2.experiences-main-heading {
-    margin-left: -.7rem;
+    margin-left: -1.3rem;
   }
   .experiences .experiences-left-side {
     width: 109%;
@@ -1713,12 +1717,13 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
   }
-  .experiences h2.experiences-main-heading {
-    margin-left: .6rem;
+  .experiences .experiences-main-heading {
+    width: 100%;
+    margin-left: -15rem;
   }
   .experiences .experiences-left-side {
-    width: 125%;
-    margin-left: -8.6rem;
+    width: 130%;
+    margin-left: -12.4rem;
   }
   .text {
     font-size: 18px;
@@ -1730,17 +1735,24 @@ textarea {
     width: 85%;
   }
   .project-details-width {
-    margin-left: -3.3rem;
+    margin-left: -10.3rem;
+    width: 80%;
   }
   .project-details-width .project-images-resize {
     width: 450px;
   }
+  .project-details-width details summary::after {
+    margin-top: 0;
+  }
   .container-contact {
-    width: 600px;
-    margin-left: -5.3rem;
+    width: 500px;
+    margin-left: -10.7rem;
   }
   .footer {
     margin-top: 7rem;
+  }
+  .footer p {
+    text-align: center;
   }
 }
 
@@ -1802,9 +1814,12 @@ textarea {
   .skills-positioning-container h4 {
     font-size: 1.3rem;
   }
+  .experiences .experiences-main-heading {
+    margin-left: -.5rem;
+  }
   .experiences .experiences-left-side {
-    width: 170%;
-    margin-left: -11rem;
+    width: 225%;
+    margin-left: -13.2rem;
   }
   .experiences .experiences-description h3 {
     font-size: 1.5rem;
@@ -1817,7 +1832,9 @@ textarea {
   }
   .project-details-width {
     margin-left: -11rem;
-    width: 350px;
+  }
+  .project-details-width .changing-according-profile {
+    width: 107%;
   }
   .project-details-width .project-images-resize {
     width: 330px;
@@ -1833,10 +1850,18 @@ textarea {
     top: -50%;
     margin-left: 20px;
   }
+  .project-details-width .summary-positioning h3 {
+    font-size: 1.3rem;
+  }
+  .project-details-width details summary {
+    width: 90%;
+  }
+  .project-details-width details summary::after {
+    font-size: 2rem;
+  }
   .container-contact {
     width: 350px;
     margin-left: -12rem;
-    background-color: rgba(250, 235, 215, 0.1);
   }
   .container-contact .name {
     float: initial;
